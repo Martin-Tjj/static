@@ -1,0 +1,35 @@
+.pic-area {
+ margin:0 auto
+}
+.A4.landscape {
+ height:792px;
+ width:1123px
+}
+.sheet {
+ background-size:100%;
+ position:relative;
+ height:792px;
+ margin:0 auto
+}
+#preview-content {
+ margin-top:80px
+}
+#picture dl {
+ font-weight:bold;
+ position:absolute;
+ font-family:'Microsoft Yahei';
+ padding:5px 5px 5px 7px;
+ border:1px solid transparent;
+ min-width:40px;
+ min-height:16px;
+ -webkit-transition:padding .3s ease,border .5s ease;
+ -moz-transition:padding .3s ease,border .5s ease;
+ -ms-transition:padding .3s ease,border .5s ease;
+ -o-transition:padding .3s ease,border .5s ease;
+ transition:padding .3s ease,border .5s ease;
+ margin:1em 0;
+ cursor:pointer
+}
+#shell-header {
+ display:none
+}

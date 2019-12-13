@@ -1,0 +1,4571 @@
+@charset "utf-8";
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+ margin:0;
+ padding:0;
+ outline:0;
+ font-size:100%;
+ background:transparent
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+ display:block
+}
+body {
+ line-height:1;
+ font-size:12px
+}
+body,
+html {
+ height:100%
+}
+ol,
+ul {
+ list-style:none
+}
+blockquote,
+q {
+ quotes:none
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+ content:'';
+ content:none
+}
+:focus {
+ outline:0
+}
+ins {
+ text-decoration:none
+}
+del {
+ text-decoration:line-through
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0
+}
+button {
+ border:0;
+ cursor:pointer
+}
+img {
+ border:0;
+ max-width:100%
+}
+a {
+ cursor:pointer;
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+ text-decoration:none;
+ cursor:pointer
+}
+input,
+select,
+input[type="checkbox"],
+input[type="radio"] {
+ vertical-align:middle;
+ padding:0;
+ width:auto
+}
+.wrap.input-wrap input[type="checkbox"] {
+ width:16px;
+ margin-right:50%
+}
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button {
+ cursor:pointer;
+ border-style:none
+}
+input::-ms-clear,
+input::-ms-reveal {
+ display:none
+}
+em,
+i {
+ font-style:italic
+}
+strong,
+b {
+ font-weight:bold
+}
+html {
+ font-size:12px;
+ width:100%;
+ height:100%
+}
+body {
+ width:100%;
+ min-width:1000px;
+ padding:0;
+ margin:0;
+ background-color:#eee;
+ font-family:"Open Sans",Arial,"Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+ color:#555
+}
+ul,
+li {
+ list-style:none;
+ margin:0;
+ padding:0
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+ margin:0
+}
+img {
+ border:0
+}
+input,
+img {
+ vertical-align:middle
+}
+input:focus {
+ background:#fff
+}
+::-webkit-input-placeholder {
+ color:#999
+}
+:-moz-placeholder {
+ color:#999
+}
+::-moz-placeholder {
+ color:#999
+}
+:-ms-input-placeholder {
+ color:#999
+}
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+ outline:0;
+ width:100%;
+ line-height:26px;
+ border:1px solid #ccc;
+ padding:0 2px 0 2px;
+ font-size:12px
+}
+select {
+ height:28px;
+ padding:0 0 0 5px;
+ width:126px
+}
+textarea {
+ resize:none;
+ min-height:50px
+}
+a {
+ text-decoration:none
+}
+* {
+ -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+.none {
+ display:none
+}
+.clear {
+ clear:both
+}
+.clear-left {
+ clear:left
+}
+.error {
+ color:#000
+}
+.btn {
+ display:inline-block;
+ color:#fff;
+ background-color:#e55a5f;
+ padding:0 5px;
+ line-height:26px;
+ font-size:13px;
+ border:1px solid #a43a3e;
+ font-weight:bold;
+ border-radius:2px
+}
+.btn-big {
+ display:inline-block;
+ color:#fff;
+ background-color:#428bca;
+ padding:10px 20px;
+ line-height:20px;
+ font-size:18px;
+ font-family:'Microsoft YaHei';
+ border:1px solid #357ebd;
+ border-radius:2px
+}
+.btn:hover {
+ transition:background-color .3;
+ -webkit-transition:background-color .3s
+}
+.btn-submit {
+ color:#fff;
+ font-size:14px;
+ height:26px;
+ line-height:25px;
+ border:1px solid #f50;
+ background-color:#ff9917;
+ background-image:-moz-linear-gradient(top,#ff8a28,#f60);
+ background-image:-ms-linear-gradient(top,#ff8a28,#f60);
+ background-image:-webkit-gradient(linear,0 0,0 100%,from(#ff8a28),to(#f60));
+ background-image:-webkit-linear-gradient(top,#ff8a28,#f60);
+ background-image:-o-linear-gradient(top,#ff8a28,#f60);
+ background-image:linear-gradient(top,#ff8a28,#f60);
+ border-radius:2px
+}
+.btn-submit:hover {
+ background:#ff9917
+}
+.submit_btn {
+ display:block;
+ height:40px;
+ line-height:40px;
+ margin-left:40%;
+ margin-bottom:20px;
+ margin-top:10px;
+ width:122px;
+ font-size:19px;
+ text-align:center
+}
+.btn-reverse {
+ background:#fff;
+ color:#e55a5f;
+ border-color:#e55a5f
+}
+.btn-reverse:hover {
+ background:#fff;
+ transition:background-color .2;
+ -webkit-transition:background-color .3s
+}
+ul.list-4 {
+ width:100%;
+ float:left
+}
+ul.list-4 li {
+ float:left;
+ width:20%;
+ text-align:left;
+ margin:15px 20px
+}
+.shadow {
+ top:0;
+ left:0;
+ width:100%;
+ height:120%;
+ position:fixed;
+ z-index:10000;
+ color:#000;
+ font-size:30px;
+ text-align:center;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/shadow.png) repeat
+}
+.popup {
+ border:5px solid #ccc;
+ border-radius:4px;
+ height:auto;
+ display:none;
+ background:#fff;
+ z-index:10002;
+ position:fixed;
+ text-align:center;
+ font-size:1.4rem;
+ padding:0 0 20px 0
+}
+.popup .popup-btn {
+ padding-top:15px;
+ text-align:center
+}
+.popup .popup-btn div {
+ max-width:45%;
+ margin-right:1%;
+ float:right
+}
+.popup .popup-btn a {
+ margin:0;
+ padding:0 10px
+}
+.popup-close {
+ font-size:1.2rem;
+ color:#c1c1c1;
+ float:right;
+ margin:0;
+ color:#fff
+}
+.popup-title {
+ text-align:left;
+ background:#e55a5f;
+ font-size:15px;
+ padding:10px;
+ color:#fff;
+ margin-bottom:15px
+}
+.popup-title:hover {
+ cursor:pointer
+}
+.popup-content {
+ padding:0 10px;
+ overflow:hidden
+}
+.popup-common {
+ max-height:500px;
+ overflow-x:hidden;
+ min-height:20px
+}
+.msg-tip {
+ padding:4px 4px;
+ color:#fff;
+ background:#ec5c5c;
+ position:absolute;
+ margin-left:50px;
+ font-size:13px;
+ margin-top:-24px;
+ border-radius:2px
+}
+.msg-tip:after,
+.msg-tip:before {
+ border:solid transparent;
+ content:' ';
+ height:0;
+ left:-12px;
+ position:absolute;
+ width:0;
+ top:4px
+}
+.msg-tip:before {
+ border-width:5px;
+ border-top-color:#ec5c5c;
+ left:43px;
+ top:20px
+}
+.weixin-wrap {
+ display:none;
+ position:fixed;
+ right:0;
+ top:50%;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/weixin_tracking.png) no-repeat;
+ width:130px;
+ height:188px;
+ z-index:99999;
+ text-align:right
+}
+.input-wrap input,
+.input-wrap select,
+.input-wrap textarea {
+ width:50%
+}
+.input-wrap input {
+ line-height:26px;
+ height:26px
+}
+.input-wrap .input-date-time {
+ width:25%
+}
+.input-wrap .input-time {
+ width:24%;
+ margin-left:1%;
+ padding-left:2px
+}
+.input-wrap .input-content {
+ display:block;
+ text-align:left;
+ float:right;
+ margin-left:-1px;
+ margin-top:6px
+}
+.input-wrap .msg {
+ width:25%;
+ display:inline-block;
+ text-align:left;
+ padding-left:10px;
+ display:none
+}
+.input-wrap label,
+.geo-selector label {
+ text-align:right;
+ display:block;
+ float:left;
+ margin-right:5px;
+ padding-top:2px;
+ line-height:25px;
+ height:26px;
+ font-size:13px;
+ width:10%
+}
+.input-wrap .nonempty {
+ color:#ff3600;
+ position:relative;
+ margin:3px 5px 10px -12px
+}
+.input-wrap .input-icon {
+ font-size:15px;
+ color:#c2c2c2;
+ margin:5px 10px;
+ position:absolute
+}
+.input-drop {
+ padding:0;
+ border:1px solid #c1c1c1;
+ background:#fefefe;
+ display:none;
+ position:absolute;
+ z-index:89;
+ overflow:auto;
+ max-height:300px;
+ margin-top:-1px;
+ box-sizing:border-box;
+ box-shadow:1px 1px 2px #ccc
+}
+.input-port-drop div.input-port-item {
+ padding:6px 10px;
+ border-bottom:1px solid #f3f3f3
+}
+.input-port-drop div.input-port-item-selected {
+ background:#f3f3f3
+}
+.input-port-drop div.input-port-sep {
+ padding:1px 10px;
+ background:#f3f3f3;
+ color:#428bca
+}
+.input-port-drop div.input-port-item:hover {
+ background:#428bca;
+ cursor:pointer;
+ transition:background .2;
+ -webkit-transition:background .2s
+}
+.input-port-drop div.input-port-item:hover {
+ background:#ededed
+}
+.input-filter-drop div {
+ padding:3px 10px;
+ line-height:20px;
+ border-bottom:1px solid #f3f3f3
+}
+.input-filter-drop div:hover {
+ background:#eee;
+ cursor:pointer
+}
+.input-wrap .input-qty {
+ border-color:#999;
+ vertical-align:middle;
+ text-align:center;
+ font-size:14px;
+ height:23px;
+ -webkit-appearance:none;
+ outline:0;
+ width:28px;
+ border:0;
+ border-top:1px solid #ddd;
+ border-bottom:1px solid #ddd;
+ padding:0;
+ margin:0;
+ border-radius:0
+}
+.input-wrap .input-qty-minus,
+.input-wrap .input-qty-plus {
+ display:inline-block;
+ vertical-align:middle;
+ text-align:center;
+ -webkit-appearance:none;
+ outline:0;
+ width:25px;
+ height:25px;
+ border:1px solid #ddd;
+ font-size:16px;
+ font-weight:600;
+ margin:0;
+ color:#666;
+ background:#f0f0f0;
+ cursor:pointer
+}
+.input-wrap .input-qty-minus:active,
+.input-wrap .input-qty-plus:active {
+ background:#dedede
+}
+.form-wrap {
+ padding:5px 20px 0 0
+}
+.form-wrap .input-wrap {
+ margin-bottom:10px
+}
+.tab-h,
+.tab-v {
+ overflow:hidden;
+ border-radius:0 0 5px 5px
+}
+.tab-h .tab-h-tabs {
+ float:left;
+ color:#888;
+ font-size:16px;
+ font-weight:bold;
+ width:30%;
+ text-align:center;
+ background:#fff
+}
+.tab-h .tab-h-tabs .tab {
+ line-height:132px;
+ background:#d9d9d9;
+ border-left:4px solid #b4b4b4;
+ border-bottom:1px solid #f3f3f3
+}
+.tab-h .tab-h-tabs .tab:hover,
+.tab-v-tabs .tab:hover {
+ cursor:pointer
+}
+.tab-h .tab-h-tabs .current,
+.tab-v .tab-v-tabs .current {
+ color:#e55a5f;
+ background:#fff;
+ border-left-color:#ff6c00
+}
+.tab-h .tab-h-panels {
+ float:left;
+ height:100%;
+ width:63%;
+ margin-left:15px;
+ background:#fff
+}
+.tab-h .tab-h-panels .panel,
+.tab-v .tab-v-panels .panel {
+ display:none
+}
+.tab-v .tab-v-tabs {
+ float:left;
+ width:100%;
+ font-size:14px;
+ padding:0 20px;
+ background:#eee
+}
+.tab-v-tabs .tab {
+ border-radius:2px 2px 0 0;
+ color:#a9a9a9;
+ font-weight:700;
+ float:left;
+ background:#f3f3f3;
+ text-align:center;
+ border-bottom:1px solid #c1c1c1;
+ border-right:1px solid #c1c1c1;
+ border-top:1px solid #c1c1c1;
+ border-left:1px solid #c1c1c1;
+ padding:7px 12px;
+ font-size:14px;
+ margin-bottom:-1px;
+ margin-left:-1px;
+ margin-right:10px
+}
+.tab-v .tab-v-tabs .current {
+ border-bottom-color:#fff;
+ border-right-color:#c1c1c1;
+ border-left-color:#c1c1c1
+}
+.tab-v .tab-v-panels {
+ float:left;
+ width:100%;
+ border-bottom:0;
+ background:#fff
+}
+.tab-v .tab-v-panels .panel {
+ border-top:0
+}
+.input-geo-drop {
+ max-height:none
+}
+.input-geo-drop .tab-v-tabs {
+ background:#f3f3f3;
+ padding:0;
+ border-bottom-color:#16467c
+}
+.input-geo-drop .tab {
+ border-bottom-color:#16467c
+}
+.input-geo-drop .tab-v-panels .panel {
+ padding:0;
+ clear:both;
+ border:0
+}
+.input-geo-drop dl {
+ width:100%;
+ float:left;
+ max-height:300px;
+ overflow:auto;
+ border-top:0
+}
+.input-geo-drop dl dt {
+ min-width:50px;
+ float:left;
+ margin:5px 5px 0;
+ padding:4px;
+ text-align:center;
+ line-height:24px;
+ height:24px;
+ border-radius:2px;
+ font-weight:bold
+}
+.input-geo-drop dl dd {
+ float:left;
+ width:84%
+}
+.input-geo-drop span {
+ float:left;
+ background:#fefefe;
+ min-width:60px;
+ margin:5px 5px 0;
+ padding:4px;
+ text-align:center;
+ line-height:24px;
+ height:24px;
+ border-radius:2px
+}
+.input-geo-drop span:hover {
+ color:#fff;
+ cursor:pointer;
+ background-color:#e55a5f
+}
+.input-geo-drop .selected {
+ background:#e55a5f;
+ color:#fff
+}
+.geo-selector select {
+ width:auto
+}
+.date-selector {
+ clear:both
+}
+.date-selector ul {
+ width:100%;
+ float:left
+}
+.date-selector .date-selector-selected,
+.date-selector .date-selector-selected:hover {
+ color:#333;
+ background-color:#fff;
+ border-color:#174e87;
+ border-left:1px solid #0e4e86;
+ border-bottom-color:#fff
+}
+.date-selector-item {
+ float:left;
+ background-color:#fafafa;
+ font-size:14px;
+ font-weight:bold;
+ width:auto;
+ padding:10px 0;
+ border-top:1px solid #cecece;
+ border-right:1px solid #cecece;
+ border-bottom:1px solid #0e4e86;
+ text-align:center;
+ color:#999;
+ margin-bottom:-1px
+}
+.date-selector-item:hover {
+ background-color:#0e4e86;
+ color:#fff;
+ border-color:#0e4e86
+}
+.date-selector-item:first-child {
+ border-left:1px solid #cecece
+}
+.date-selector-item:hover {
+ cursor:pointer
+}
+.date-selector-item-arrow {
+ width:auto
+}
+input.disabled,
+textarea.disabled,
+select.disabled {
+ background:#f3f3f3;
+ border-color:#ccc
+}
+.sub-title {
+ color:#0574ae;
+ border-bottom:2px solid #cecece;
+ background:#fafafa;
+ padding:5px 12px;
+ margin-bottom:10px;
+ font-size:15px;
+ font-weight:700;
+ line-height:26px
+}
+.paging {
+ text-align:center;
+ color:#555;
+ padding:30px;
+ background:#fff;
+ border:1px solid #c1c1c1;
+ border-top:0;
+ border-radius:0 0 5px 5px
+}
+.paging .paging-item {
+ display:inline-block
+}
+.paging .paging-item span:hover {
+ background:#e55a5f;
+ border-color:#e55a5f;
+ color:#fff;
+ transition:background .2;
+ -webkit-transition:background .2s
+}
+.paging .paging-item span {
+ color:#999;
+ display:inline-block;
+ background:#fff;
+ padding:7px 12px;
+ border:1px solid #ddd;
+ margin-left:-1px
+}
+.paging .paging-item .paging-current {
+ color:#fff;
+ background:#e55a5f;
+ border-color:#a43a3e
+}
+.paging .paging-item .paging-disabled {
+ color:#999;
+ border-color:#ddd
+}
+.paging .paging-item .paging-disabled:hover {
+ background:#fff;
+ border-color:#eee;
+ color:#c1c1c1;
+ transition:background .2;
+ -webkit-transition:background .2s
+}
+.paging-item:nth-of-type(1) span {
+ border-radius:6px 0 0 6px
+}
+.paging-item:nth-last-of-type(1) span {
+ border-radius:0 6px 6px 0
+}
+.paging .paging-info {
+ padding:0 10px 0 10px;
+ font-size:12px
+}
+.paging .paging-info a {
+ color:#e55a5f
+}
+.paging .paging-info a:hover {
+ text-decoration:underline
+}
+.paging .paging-info .active {
+ cursor:default;
+ color:#c1c1c1;
+ text-decoration:none
+}
+.paging .paging-info .active:hover {
+ text-decoration:none
+}
+.paging-first {
+ border-radius:3px 0 0 3px
+}
+.paging-last {
+ border-radius:0 3px 3px 0
+}
+.col-5 {
+ width:5%
+}
+.col-10 {
+ width:10%
+}
+.col-15 {
+ width:15%
+}
+.col-20 {
+ width:20%
+}
+.col-25 {
+ width:25%
+}
+.col-30 {
+ width:30%
+}
+.col-40 {
+ width:40%
+}
+.col-50 {
+ width:50%
+}
+.col-60 {
+ width:60%
+}
+.col-70 {
+ width:70%
+}
+table th {
+ background:#e55a5f
+}
+table td {
+ text-align:center;
+ border-bottom:1px solid #ddd;
+ word-break:break-all
+}
+.price-amt {
+ color:#f60;
+ font-weight:700;
+ font-size:16px
+}
+.preview-wrap {
+ width:50%;
+ max-height:200px;
+ overflow:auto;
+ margin-bottom:10px
+}
+.preview-img {
+ width:100%;
+ display:block
+}
+.status {
+ color:#357ebd
+}
+.status-major {
+ color:#fb8016
+}
+.carrier {
+ width:60px;
+ height:60px;
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/carriers.png);
+ background-repeat:no-repeat;
+ background-position:left top
+}
+.carrier-cscl {
+ background-position:0 0
+}
+.carrier-cosco {
+ background-position:0 -60px
+}
+.carrier-sinotrans {
+ background-position:0 -120px
+}
+.carrier-apl {
+ background-position:0 -180px
+}
+.carrier-mol {
+ background-position:0 -240px
+}
+.carrier-evergreen {
+ background-position:0 -300px
+}
+.carrier-sitc {
+ background-position:0 -360px
+}
+.carrier-cma {
+ background-position:0 -420px
+}
+.carrier-msc {
+ background-position:0 -480px
+}
+.carrier-pil {
+ background-position:0 -540px
+}
+.carrier-uasc {
+ background-position:0 -600px
+}
+.carrier-msk {
+ background-position:0 -660px
+}
+.carrier-csav {
+ background-position:0 -720px
+}
+.carrier-oocl {
+ background-position:0 -780px
+}
+.carrier-hanjin {
+ background-position:0 -840px
+}
+.carrier-wh {
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/carrier-wh.png);
+ background-repeat:no-repeat;
+ background-position:0 10px
+}
+.carrier-jx {
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/carrier-jx.jpg);
+ background-repeat:no-repeat;
+ background-position:0 0
+}
+.carrier-zim {
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/carrier-zim.jpg);
+ background-repeat:no-repeat;
+ background-position:center 10px
+}
+.carrier-by {
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/carrier-by.jpg);
+ background-repeat:no-repeat;
+ background-position:center 10px
+}
+.language {
+ font-size:12px;
+ display:block;
+ padding:3px 8px 3px 12px;
+ line-height:20px;
+ text-align:center;
+ margin-top:-1px;
+ background:#fff
+}
+.language-wrap .language-detail {
+ display:none;
+ position:absolute;
+ margin-left:-8px;
+ border:1px solid #ccc;
+ border-top:0
+}
+.language-wrap .site-nav-detail {
+ max-width:300px;
+ background:#fff;
+ margin-left:-100px;
+ padding:3px 2px;
+ z-index:20
+}
+.language-wrap .site-nav-detail a {
+ float:left;
+ width:40%;
+ line-height:22px;
+ text-align:left
+}
+#to-top {
+ position:fixed;
+ top:60%;
+ right:-45px;
+ z-index:999999;
+ padding-right:5px
+}
+#to-top a {
+ display:block;
+ background-color:#777;
+ height:48px;
+ width:48px;
+ line-height:48px;
+ color:#fff;
+ overflow:hidden;
+ margin-bottom:5px;
+ opacity:.5
+}
+#to-top a i {
+ font-size:48px;
+ width:48px;
+ text-align:center
+}
+#to-top a:hover {
+ background-color:#F60;
+ opacity:1
+}
+#shell-loading {
+ font-size:25px;
+ margin:200px 0;
+ text-align:center
+}
+#shell-top {
+ background:#f8f8f8;
+ border-bottom:1px solid #e5e5e5;
+ text-align:center
+}
+#shell-top a {
+ color:#0574ae
+}
+#shell-top a:hover {
+ color:#ff6c00
+}
+#shell-top .user-name {
+ color:#13569c
+}
+#shell-top .vip,
+#shell-top .contract {
+ color:#f60
+}
+.pv0-s {
+ display:inline-block;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/Lv_grow_icons.png) no-repeat 0 2px;
+ position:relative;
+ top:2px;
+ left:0;
+ height:17px;
+ width:16px;
+ margin-right:3px
+}
+.pv1-s {
+ display:inline-block;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/Lv_grow_icons.png) no-repeat 0 -10px;
+ position:relative;
+ top:2px;
+ left:0;
+ height:17px;
+ width:16px;
+ margin-right:3px
+}
+.pv2-s {
+ display:inline-block;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/Lv_grow_icons.png) no-repeat 0 -22px;
+ position:relative;
+ top:2px;
+ left:0;
+ height:17px;
+ width:16px;
+ margin-right:3px
+}
+.pv0 {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/Lv_grow_icons.png) no-repeat -20px 2px;
+ display:inline-block;
+ height:16px;
+ width:70px
+}
+.pv1 {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/Lv_grow_icons.png) no-repeat -20px -10px;
+ display:inline-block;
+ height:16px;
+ width:70px
+}
+.pv2 {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/Lv_grow_icons.png) no-repeat -20px -22px;
+ display:inline-block;
+ height:16px;
+ width:70px
+}
+.fa-home:hover {
+ color:#174e87
+}
+.qq-link {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/contact-BB-icon.png);
+ width:64px;
+ height:28px;
+ line-height:28px;
+ display:block;
+ padding-left:28px;
+ text-align:center;
+ color:#fff
+}
+#shell-top #shell-top-inner {
+ margin:0 auto;
+ text-align:left;
+ width:1080px;
+ height:29px;
+ line-height:29px;
+ font-family:tahoma,arial,'Hiragino Sans GB',sans-serif;
+ visibility:hidden
+}
+#shell-top .shell-top-right {
+ float:right
+}
+#shell-top .shell-top-right a {
+ color:#555
+}
+#shell-top .shell-top-right .tg-right {
+ width:11px;
+ height:11px;
+ display:inline-block;
+ padding-left:5px;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/toggle_sprite.png) no-repeat right 0
+}
+#shell-top .shell-top-right a:hover {
+ color:#ff6c00
+}
+#shell-top .shell-top-right .spacer {
+ width:1px;
+ height:12px;
+ margin-top:9px;
+ padding:0;
+ background:#ccc;
+ overflow:hidden
+}
+#shell-top .shell-top-left {
+ float:left
+}
+#shell-top .shell-top-right .top-icon {
+ color:#0574ae;
+ font-size:15px
+}
+#shell-top .shell-top-right li,
+#shell-top .shell-top-left li {
+ float:left;
+ padding:0 5px 0 5px;
+ cursor:default
+}
+#shell-top .shell-top-left li strong {
+ color:#ff6c00
+}
+#shell-top .shell-top-left strong {
+ color:#ff6c00
+}
+#shell-top .shell-top-left iframe {
+ padding-top:3px
+}
+#shell-top .shell-top-left li .vip-select li,
+#shell-top .shell-top-left li .contract-select li {
+ float:none;
+ padding:0
+}
+#shell-top .shell-top-left li .vip-select li .fa-caret-down,
+#shell-top .shell-top-left li .contract-select li .fa-caret-down {
+ margin-left:5px
+}
+#shell-top .shell-top-left li .vip-select .vip-select-hide,
+#shell-top .shell-top-left li .contract-select .contract-select-hide {
+ display:none
+}
+#shell-top .shell-top-left li .vip-select .vip-select-li2,
+#shell-top .shell-top-left li .contract-select .contract-select-li2 {
+ background:#f1f1f1;
+ border:1px solid #c1c1c1;
+ position:absolute
+}
+#shell-nav-wrap {
+ float:left;
+ margin:5px 0 0 1%;
+ width:350px;
+ visibility:hidden
+}
+#shell-search {
+ visibility:hidden
+}
+.shell-nav {
+ margin:8px 0 0 0
+}
+.shell-nav li {
+ float:left;
+ line-height:20px;
+ text-align:center;
+ font-size:14px
+}
+.shell-nav li a {
+ padding:6px 20px;
+ margin-right:60px;
+ color:#fff;
+ font-size:16px;
+ font-weight:600;
+ display:block;
+ border-radius:3px
+}
+.shell-nav li :hover {
+ color:#168de7;
+ transition:background .3;
+ -webkit-transition:background .3s
+}
+.shell-nav .current a {
+ color:#168de7
+}
+#shell-header {
+ min-width:1020px;
+ width:100%;
+ height:69px;
+ background-color:#fff;
+ position:fixed;
+ top:0;
+ z-index:100;
+ border-bottom:1px solid #ccc;
+ box-shadow:0 2px 3px #ddd
+}
+#shell-header #shell-header-inner {
+ margin:0 auto;
+ padding:6px 0;
+ width:100%;
+ height:55px
+}
+#shell-header .shell-header-logo {
+ float:left;
+ width:50px;
+ margin-left:10px
+}
+#shell-header .shell-header-company {
+ float:left;
+ font-family:"微软雅黑";
+ margin-top:5px;
+ height:47px;
+ line-height:22px;
+ padding-left:8px
+}
+#shell-header .shell-header-company span {
+ font-size:20px;
+ font-weight:600
+}
+#shell-header .shell-header-logo-t {
+ display:block;
+ background-color:#f6f6f6;
+ margin-top:5px;
+ width:73px;
+ height:23px;
+ text-align:center;
+ line-height:24px;
+ cursor:pointer;
+ border:1px solid #c9c9c9;
+ border-radius:3px
+}
+#shell-notify {
+ position:fixed;
+ bottom:10px;
+ right:50px;
+ z-index:1000;
+ border:2px solid #CCC;
+ padding:20px;
+ background:white
+}
+div#shell-notify span {
+ content:"x";
+ position:absolute;
+ top:-12px;
+ background:#e55a5f;
+ width:18px;
+ border-radius:50%;
+ line-height:18px;
+ text-align:center;
+ color:white;
+ font-weight:bold;
+ border:2px solid #CCC;
+ right:-10px
+}
+.secondary-nav {
+ padding:10px 15px;
+ background-color:#f3f3f3;
+ color:#666
+}
+.secondary-nav a {
+ color:#428bca;
+ margin:0 5px
+}
+.secondary-nav a:hover {
+ color:#428bca
+}
+.content-wrap {
+ margin:0 auto;
+ width:100%
+}
+.left-sub-wrap {
+ float:left;
+ margin-right:2%;
+ width:70%;
+ height:auto
+}
+.right-sub-wrap {
+ float:left;
+ width:28%;
+ height:auto
+}
+.right-sub-wrap .comment li {
+ color:#555;
+ margin-left:8px;
+ width:272px;
+ line-height:24px;
+ word-break:keep-all;
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis
+}
+.right-sub-wrap .comment li i {
+ margin-right:5px;
+ color:#0574ae
+}
+.right-sub-wrap .comment li a {
+ color:#666
+}
+.right-sub-wrap .comment li a:hover {
+ color:#0574ae
+}
+#shell-header .shell-header-logo-t a {
+ color:#666
+}
+#shell-header .shell-header-logo-t a:hover {
+ color:#273d88
+}
+#shell-header .shell-header-cart {
+ background-color:#0e4e86
+}
+#shell-header .shell-header-user {
+ background-color:#e55a5f;
+ display:none
+}
+#shell-header .shell-header-user .welcome,
+#shell-header .shell-header-user .user-name,
+#shell-header .shell-header-user .logout {
+ color:#fff;
+ margin-left:6px;
+ font-size:14px;
+ display:inline-block;
+ float:left
+}
+#shell-header .shell-header-user .user-name {
+ display:inline-block;
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ max-width:100px;
+ cursor:default
+}
+#shell-header .shell-header-cart,
+#shell-header .shell-header-user {
+ float:right;
+ margin:16px 15px 0 0;
+ padding:0 10px;
+ font-size:15px;
+ width:auto;
+ height:30px;
+ line-height:30px;
+ border-radius:3px 0 0 3px;
+ position:relative
+}
+#shell-header .shell-header-cart a {
+ color:#fff
+}
+#shell-header .shell-header-cart i {
+ font-size:24px;
+ margin:6px 5px 0 0
+}
+#shell-header .shell-header-cart-nub {
+ display:block;
+ background:#fff;
+ color:#f60;
+ text-align:center;
+ font-size:16px;
+ font-weight:bold;
+ width:38px;
+ height:38px;
+ border-top-right-radius:3px;
+ border-bottom-right-radius:3px;
+ position:absolute;
+ top:1px;
+ left:121px
+}
+#shell-footer {
+ text-align:right;
+ line-height:18px;
+ color:#999;
+ font-size:10px;
+ display:none;
+ background:#fdfdfd;
+ padding-right:10px;
+ clear:both
+}
+#shell-footer a {
+ color:#aaa
+}
+#shell-wrap {
+ visibility:hidden;
+ width:100%;
+ margin:0 auto
+}
+#shell-wrap-inner {
+ min-width:1000px;
+ margin:0 auto
+}
+.nivo-controlNav {
+ padding:0;
+ margin-top:-50px;
+ z-index:10001;
+ position:absolute;
+ width:100%
+}
+.nivo-control {
+ padding:2px 8px;
+ margin:0 5px;
+ background:#000;
+ opacity:.3;
+ border-radius:20px;
+ color:#fff
+}
+.nivo-controlNav a.active {
+ background:#fff;
+ opacity:.7;
+ color:#666
+}
+.nivo-directionNav {
+ display:none
+}
+#entrance .btn {
+ margin:53% auto 0 auto;
+ width:100px;
+ height:35px;
+ line-height:35px;
+ color:#fff;
+ background:#ff8707;
+ font-size:24px;
+ padding:5px 25px;
+ border-radius:10px;
+ border:2px solid #fc952c;
+ text-shadow:0 2px 2px #e7630c;
+ box-shadow:0 6px 1px #ad4a0d
+}
+#entrance .entrance p {
+ color:#5eaae5;
+ text-shadow:0 1px 1px #000;
+ width:140px;
+ text-align:left;
+ line-height:22px;
+ font-size:14px;
+ margin:15px auto
+}
+#entrance .entrance,
+#entrance .entrance-mask {
+ position:absolute;
+ height:100%;
+ width:50%;
+ top:0
+}
+#entrance .entrance-mask {
+ width:100%;
+ background:#000;
+ opacity:.4;
+ display:block
+}
+#entrance .entrance-current {
+ opacity:0;
+ transition:opacity .3;
+ -webkit-transition:opacity .3s
+}
+#list-search {
+ margin-top:10px;
+ margin-bottom:10px;
+ background:#f3f3f3;
+ color:#666;
+ font-weight:bold;
+ float:left;
+ width:950px;
+ height:40px;
+ line-height:40px;
+ padding:5px 25px;
+ border:1px solid #ccc
+}
+#list-search .input-wrap,
+#list-filter .input-wrap {
+ float:left;
+ width:270px;
+ margin-right:10px
+}
+#list-search .input-wrap label,
+#list-filter .input-wrap label {
+ width:auto;
+ margin-top:6px
+}
+#list-search .input-wrap .msg,
+#list-filter .input-wrap .msg {
+ width:auto
+}
+#list-search .input-wrap .input-icon {
+ margin:12px 10px
+}
+#list-search .input-wrap label {
+ padding-right:5px
+}
+#list-search .input-wrap input {
+ line-height:26px;
+ height:26px
+}
+#list-filter {
+ float:left;
+ border:1px solid #cecece;
+ border-top:0;
+ padding:0 15px
+}
+#list-filter-ul {
+ line-height:35px;
+ float:left;
+ width:100%
+}
+#list-filter-ul li {
+ float:left;
+ padding:0 20px;
+ border-right:1px solid #cecece
+}
+#list-filter-ul li:first-child {
+ border-left:none;
+ padding-left:0
+}
+#list-type {
+ width:auto;
+ padding-left:0
+}
+#list-date-range {
+ float:left;
+ clear:both;
+ width:100%;
+ margin:10px 0;
+ display:none
+}
+#order-list {
+ float:left;
+ width:100%;
+ box-sizing:border-box
+}
+#list-result .list-detail {
+ display:none;
+ background:#fcfcfc;
+ border:1px solid #f3f3f3;
+ color:#666;
+ font-weight:normal
+}
+#list-result .list-detail td {
+ text-align:left
+}
+#list-result table tr {
+ color:#333;
+ font-weight:normal
+}
+#list-result .list-detail table tr {
+ background-color:#fff;
+ border-bottom:0
+}
+#list-result table td:hover {
+ cursor:pointer
+}
+#list-result table {
+ width:100%;
+ text-align:center
+}
+#list-result table th {
+ padding:10px 0;
+ color:#fff
+}
+#list-result table td {
+ line-height:24px;
+ padding:5px 10px;
+ border-bottom:0
+}
+#list-result table tr:hover {
+ transition:background-color .1;
+ -webkit-transition:background-color .1s
+}
+#list-result .list-detail td:hover {
+ cursor:default
+}
+#list-result .list-detail .container-total-detail {
+ width:50%;
+ float:right;
+ text-align:right
+}
+#list-result .list-detail .container-total-detail span {
+ color:#f60;
+ font-size:18px;
+ font-weight:bold;
+ margin:0 2px
+}
+#list-result .list-detail .list-detail-container {
+ float:right;
+ width:100%;
+ margin:10px 0 0 0
+}
+#list-result .list-detail .list-detail-container .container-info {
+ border-bottom:1px dashed #ccc;
+ padding-bottom:10px
+}
+#list-result .list-detail .list-detail-container .container-info ul {
+ height:25px;
+ line-height:25px;
+ clear:both
+}
+#list-result .list-detail .list-detail-container .container-info li {
+ float:left;
+ width:25%
+}
+#list-result .list-detail .list-detail-container .container-info .container-info-detail {
+ font-weight:bold;
+ color:#333
+}
+#list-result .list-detail .list-detail-container .container-oper {
+ margin:10px 0 20px
+}
+#list-result .list-detail .list-detail-container .container-oper .container-oper-into {
+ float:left;
+ width:35%
+}
+#list-result .list-detail .list-detail-container .container-oper .container-oper-into ul {
+ height:30px;
+ line-height:30px;
+ font-weight:bold;
+ color:#333
+}
+#list-result .list-detail .list-detail-container .container-oper .container-oper-into .li_1 {
+ width:30%;
+ float:left
+}
+#list-result .list-detail .list-detail-container .container-oper .container-oper-into .li_2 {
+ width:50%;
+ float:left;
+ text-align:center
+}
+#list-result .list-detail .list-detail-container .container-btn a {
+ margin-left:35px;
+ padding:7px;
+ color:#fff;
+ background-color:#174e87
+}
+#list-result .list-detail .list-detail-right {
+ float:right;
+ width:100%
+}
+#list-result .list-detail .list-detail-right .container-oper-desc {
+ padding:0 1%;
+ float:left;
+ width:48%
+}
+#list-result .list-detail .list-detail-right table th {
+ color:#555;
+ background:#f5f5f5;
+ border-bottom:1px solid #cecece;
+ padding:2px 0
+}
+#list-result .list-detail .list-detail-right table {
+ float:right;
+ width:50%
+}
+#list-result .list-detail .list-detail-right table td {
+ text-align:center
+}
+#list-result .list-result-price-item {
+ float:left;
+ padding:0
+}
+#list-result table td a {
+ color:#fff
+}
+#list-result table td .text-btn {
+ color:#428bca;
+ line-height:30px
+}
+.cart-invalid {
+ background-color:#f7f7f7
+}
+.cart-invalid h3,
+.cart-invalid div,
+.cart-invalid td,
+.cart-invalid tr,
+.cart-invalid th,
+.cart-invalid input,
+.cart-invalid button {
+ color:#999
+}
+#cart-steps {
+ margin-top:15px;
+ padding:5px 10px
+}
+#cart-detail .block {
+ border:1px solid #ddd;
+ border-radius:3px;
+ margin:20px 0
+}
+#cart-detail .block h3 {
+ border-bottom:1px solid #ddd;
+ border-left:3px solid #0e4e86;
+ height:30px;
+ line-height:32px;
+ font-weight:700;
+ padding-left:10px;
+ font-size:15px
+}
+#cart-detail .block .detail-block {
+ padding:10px 40px;
+ border-bottom:1px dashed #ccc
+}
+#cart-detail .block .nobottombd {
+ border-bottom:0
+}
+#cart-detail .block .detail-block-check {
+ float:left;
+ padding-left:20px
+}
+#cart-detail .block .detail-block-info {
+ float:left;
+ width:95%
+}
+#cart-detail .block .detail-block-info li {
+ width:25%;
+ text-align:center;
+ font-weight:bold;
+ color:#000;
+ float:left;
+ height:20px;
+ line-height:20px
+}
+#cart-detail .block .detail-block-info .title li {
+ color:#666;
+ font-weight:normal
+}
+#cart-detail .block .detail-block-oper {
+ float:left;
+ width:85%;
+ margin:5px 0 5px 130px;
+ height:40px;
+ line-height:40px
+}
+#cart-detail .block .detail-block-oper li {
+ float:left;
+ width:10%;
+ font-weight:bold
+}
+#cart-detail .block .detail-block-oper .li_x {
+ font-weight:bold;
+ width:2%
+}
+#cart-detail .block .detail-block-oper li input {
+ border-color:#999;
+ height:20px;
+ width:10px
+}
+#cart-detail .cart-amount {
+ text-align:right;
+ font-size:16px;
+ font-weight:bold;
+ height:35px
+}
+#cart-detail .cart-amount strong {
+ color:#F40;
+ font-size:18px
+}
+#cart-btn {
+ text-align:right;
+ margin-bottom:20px
+}
+#cart-btn a {
+ margin-left:10px;
+ padding:6px 20px;
+ border-radius:3px;
+ color:#fff;
+ font-size:16px;
+ text-align:center
+}
+.grid-step {
+ margin:0 auto;
+ width:100%
+}
+.grid-step .steps-bar {
+ font-size:0;
+ line-height:0;
+ background:#EEE;
+ border-radius:4px;
+ overflow:hidden;
+ white-space:nowrap
+}
+.steps-bar .step {
+ position:relative;
+ display:inline-block;
+ width:190px;
+ padding-left:5px;
+ font-size:14px;
+ line-height:30px;
+ _line-height:29px;
+ text-align:center;
+ color:#666
+}
+.grid-step .step__num {
+ font-size:16px;
+ font-weight:700;
+ font-family:Arial
+}
+#step-current {
+ color:#fff;
+ background:#0e4e86
+}
+.list-result-price {
+ color:#ff7e00;
+ font-weight:700;
+ font-size:14px
+}
+.grid-step .steps-bar li {
+ width:235px
+}
+.grid-step .steps-bar .arrow__background,
+.grid-step .steps-bar .arrow__foreground {
+ position:absolute;
+ top:0;
+ _top:-1px;
+ right:-15px;
+ width:0;
+ height:0;
+ border-width:15px 0 15px 15px;
+ border-style:dashed dashed dashed solid;
+ border-color:transparent transparent transparent #EEE;
+ font-size:0;
+ line-height:0;
+ z-index:1
+}
+#step-current .arrow__foreground {
+ border-left-color:#0e4e86
+}
+.grid-step .steps-bar .arrow__background {
+ right:-19px;
+ top:-2px;
+ _top:-3px;
+ border-left-color:#fff;
+ border-width:17px 0 17px 17px
+}
+#personal-info-left {
+ width:137px;
+ top:69px;
+ background-color:#e55a5f;
+ color:#fff;
+ position:fixed;
+ z-index:100
+}
+#personal-info-left a {
+ color:#fff
+}
+#personal-info-left ul {
+ padding:0;
+ font-size:13px
+}
+#personal-info-left ul li {
+ padding:10px 0 10px 20px
+}
+#personal-info-left ul li.title {
+ font-weight:bold
+}
+#personal-info-left ul li.title:hover {
+ cursor:pointer
+}
+#personal-info-left ul li.menu {
+ padding:10px 0 10px 32px
+}
+#personal-info-left ul li.active {
+ background:#a43a3e
+}
+#personal-info-left .menu-operation {
+ padding:0 10px;
+ line-height:30px;
+ color:#f99494;
+ text-align:right;
+ background:#a43a3e
+}
+#personal-info-left .menu-operation i {
+ font-size:initial;
+ margin:7px 0 7px 5px;
+ float:right
+}
+#personal-info-left ul li.menu .trangle {
+ display:none;
+ width:0;
+ height:0;
+ border-width:6px 6px 6px 0;
+ border-style:solid;
+ border-color:transparent #eee transparent transparent;
+ position:relative;
+ float:right
+}
+#personal-info-left ul li.active .trangle {
+ display:block
+}
+#personal-info-left .menu-operation-open {
+ display:none;
+ padding:0;
+ line-height:30px;
+ color:#f99494;
+ text-align:center;
+ height:100%
+}
+#personal-info-left .menu-operation-open i {
+ display:block;
+ line-height:30px;
+ background:#a43a3e;
+ font-size:initial
+}
+#personal-info-left .menu-operation-open .open-menu-info {
+ padding:5px;
+ background:#a43a3e;
+ border-bottom:1px #f99494 solid
+}
+#personal-info-left .menu-operation:hover,
+#personal-info-left .menu-operation-open:hover {
+ cursor:pointer
+}
+#personal-info-right {
+ float:left;
+ overflow:visible;
+ margin-top:70px;
+ margin-left:137px;
+ background:#eee;
+ font-family:tahoma,arial,'Hiragino Sans GB',sans-serif
+}
+#personal-info-right h3 {
+ line-height:27px;
+ padding:0 0 0 1%;
+ width:99%
+}
+.bread-crumbs {
+ line-height:27px;
+ padding:0 0 0 1%;
+ margin:-38px 0 10px -15px;
+ background:#eee;
+ position:fixed;
+ z-index:90;
+ width:99%;
+ border-top:1px solid #ddd;
+ box-sizing:border-box
+}
+.bread-crumbs .breadcrumb-left {
+ font-size:13px;
+ height:30px;
+ float:left;
+ line-height:26px;
+ margin-top:4px
+}
+.bread-crumbs .breadcrumb-right {
+ font-size:15px;
+ height:30px;
+ float:left;
+ line-height:30px
+}
+.bread-crumbs .node span,
+.bread-crumbs .node a {
+ font-size:13px;
+ margin:0 10px;
+ color:#999
+}
+.bread-crumbs .current span,
+.bread-crumbs .current a {
+ color:#e55a5f
+}
+.breadcrumb-left .node {
+ float:left
+}
+.breadcrumb-left .parent-node {
+ margin-left:0;
+ color:#999
+}
+.breadcrumb-left .child-node {
+ margin-left:10px;
+ color:#e55a5f
+}
+.breadcrumb-left .child-node a,
+.breadcrumb-left .child-node i {
+ color:#999
+}
+.admin-table {
+ overflow:auto
+}
+.admin-table-list {
+ position:relative;
+ background:#fff
+}
+.admin-table-list .admin-table table th {
+ white-space:nowrap;
+ word-break:keep-all
+}
+.admin-table-list .admin-table table {
+ border-right:0;
+ border-left:0
+}
+.admin-table-list {
+ border-right:1px solid #c1c1c1;
+ border-left:1px solid #c1c1c1
+}
+.admin-table-list .admin-table table td {
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ cursor:default
+}
+.admin-table-list .admin-table table td {
+ padding:0 10px;
+ margin:0;
+ height:28px
+}
+.admin-table-list .admin-table table tr td:first-child {
+ border-left:0
+}
+.admin-table table {
+ table-layout:auto;
+ width:100%;
+ border-right:1px solid #ddd;
+ border-left:1px solid #c1c1c1;
+ box-sizing:border-box
+}
+.admin-table table tr {
+ line-height:20px;
+ text-align:center
+}
+.admin-table table th {
+ background-color:#e55a5f;
+ color:#fff;
+ height:30px;
+ line-height:30px;
+ padding:0 10px;
+ text-align:center
+}
+.sticky-thead {
+ position:relative;
+ z-index:6
+}
+table.operation-column-congeal {
+ position:absolute;
+ right:1px;
+ border-left:none;
+ z-index:10
+}
+table.operation-bar-congeal {
+ position:absolute;
+ right:0;
+ top:0;
+ border-left:0;
+ z-index:4
+}
+table.operation-column-congeal,
+table.operation-bar-congeal {
+ width:auto
+}
+.admin-table-list .admin-table table {
+ width:auto
+}
+.admin-table-list .admin-table .operation-bar-congeal tr td:first-child {
+ border-left:1px solid #c1c1c1
+}
+.admin-table table td {
+ padding:0 10px;
+ margin:0;
+ height:28px
+}
+.admin-table table tr.hoverTr:nth-child(odd),
+.admin-table table tr.hoverTr:nth-child(even) {
+ background:#efefef
+}
+.admin-table table .c_phone,
+.admin-table table .c_name,
+.admin-table table .c_mobile {
+ width:12%
+}
+.admin-table table .price {
+ width:20%
+}
+.admin-table table .due,
+.admin-table table .over_due {
+ width:14%
+}
+.admin-table table td {
+ border-left:1px solid #ddd;
+ padding:3px;
+ font-size:13px;
+ line-height:20px
+}
+.admin-table table tr td:first-child {
+ border-left:1px solid #c1c1c1
+}
+.admin-table table td a:hover {
+ text-decoration:underline
+}
+.table-toolbar {
+ float:left;
+ width:100%;
+ background:#f7f7f7;
+ border:1px solid #c1c1c1;
+ position:relative;
+ padding:5px 0;
+ border-radius:4px 4px 0 0;
+ box-sizing:border-box;
+ border-bottom:0;
+ z-index:6
+}
+.surcharge tr {
+ font-size:12px
+}
+.surcharge tr th {
+ font-weight:400;
+ padding:5px 10px
+}
+.personal_user_info {
+ display:none;
+ width:100%;
+ height:40px;
+ border-bottom:1px #0e4e86 solid;
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/Left_title_bg.jpg)
+}
+.user_img {
+ float:left;
+ width:50px;
+ height:60px;
+ margin:10px 0 0 10px;
+ border:2px solid #fff;
+ border-radius:5px;
+ overflow:hidden
+}
+.user_img img {
+ width:60px;
+ height:60px;
+ border:0;
+ overflow:hidden
+}
+.user_img a {
+ display:inline-block;
+ position:relative;
+ z-index:1;
+ overflow:hidden;
+ text-decoration:none;
+ color:#fff;
+ font-size:12px;
+ font-weight:normal
+}
+.user_info {
+ margin-left:75px;
+ height:70px;
+ line-height:20px;
+ text-align:left;
+ overflow:hidden;
+ padding:10px 0 0
+}
+.user_info a {
+ color:#f60;
+ font-weight:600
+}
+.user_info strong {
+ color:#fff;
+ font-size:13px;
+ width:60px;
+ overflow:hidden;
+ white-space:nowrap;
+ text-overflow:ellipsis;
+ display:block
+}
+.info-table {
+ color:#666;
+ position:relative;
+ min-height:350px
+}
+.info-box {
+ border-top:1px solid #438cd9
+}
+.info-table ul {
+ height:31px;
+ border:1px solid #EEE;
+ background-color:#f7f7f7;
+ _overflow:hidden
+}
+.info-table ul li {
+ float:left;
+ height:30px;
+ line-height:30px;
+ cursor:pointer;
+ color:#333;
+ font-size:13px;
+ background-color:#f7f7f7;
+ border:1px solid #ddd;
+ border-top:0;
+ border-left:none
+}
+.info-table ul li a {
+ text-decoration:none;
+ color:#333;
+ display:block;
+ padding:0 20px
+}
+.info-table .on a {
+ text-decoration:none;
+ background-color:#fff;
+ color:#13569c;
+ font-weight:bold;
+ display:block;
+ padding:0 20px
+}
+.order-item {
+ float:left;
+ width:100%;
+ margin:0 0 12px 0;
+ border:1px solid #ddd;
+ text-align:left
+}
+.order-item td {
+ padding:8px 1px 8px 10px;
+ text-align:left;
+ border:0;
+ border-bottom:0;
+ position:relative
+}
+.order-item td.order-et {
+ padding-top:0
+}
+.order-item .order-header {
+ border-bottom:1px solid #ddd;
+ background:#f5f5f5;
+ color:#666
+}
+.order-item .order-carrier {
+ text-align:center
+}
+.order-item .order-purchase {
+ vertical-align:top;
+ border-left:1px solid #ddd
+}
+.order-item .order-purchase div {
+ margin:0 0 10px 0
+}
+.order-type {
+ position:absolute;
+ width:42px;
+ height:42px;
+ display:block;
+ top:-3px;
+ left:-3px
+}
+.maintitle {
+ font-size:17px;
+ font-weight:bold;
+ color:white;
+ line-height:40px
+}
+.do {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat
+}
+.fo {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat 0 -43px
+}
+.eo {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat 0 -88px
+}
+.dsh {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat -44px 0
+}
+.yct {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat -44px -43px
+}
+.gl {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat -44px -88px
+}
+.lcl {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat 0 -174px
+}
+.truck {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/../common/img/new_bg_icon.png) no-repeat -44px -174px
+}
+.order-type {
+ position:absolute;
+ width:42px;
+ height:42px;
+ display:block;
+ top:-3px;
+ left:-3px
+}
+.order-item .order-price,
+.order-item .order-action,
+.order-item .order-date {
+ text-align:right;
+ padding-left:0;
+ padding-right:15px;
+ margin:0
+}
+.order-status {
+ font-weight:600
+}
+.order-item .order-header a:hover,
+.order-item-charge a:hover {
+ text-decoration:underline
+}
+.order-item .order-truck {
+ border-top:1px solid #ddd;
+ background:#f5f5f5
+}
+.order-item .order-no {
+ padding-left:25px;
+ text-align:left
+}
+.order-item .order-loading-truck {
+ padding-left:10px
+}
+.order-item .order-loading-truck .paylink {
+ font-weight:700;
+ color:#174e87;
+ font-size:13px
+}
+.order-item .order-loading-truck .paylink:hover {
+ text-decoration:underline
+}
+.order-item .order-header .btn-order-detail {
+ padding:2px 10px;
+ color:#174e87;
+ font-weight:normal
+}
+.order-item .order-header a {
+ color:#174e87
+}
+.order-item .order-header a.show-charges {
+ color:#fb8016
+}
+.order-item .order-header a,
+.order-item .order-header strong {
+ font-weight:700;
+ line-height:24px
+}
+.order-item .order-truck {
+ border-bottom:1px solid #ddd
+}
+.order-item td strong {
+ font-size:14px
+}
+.order-item .order-loading-truck i {
+ margin-right:5px;
+ color:#f60;
+ font-size:16px
+}
+.order-item-charge {
+ margin:-12px 0 12px 0;
+ float:right;
+ clear:both;
+ width:60%;
+ border:1px solid #ddd;
+ border-top:0;
+ display:none
+}
+.order-item-charge td {
+ border:0;
+ padding:8px 0
+}
+.order-item-charge a {
+ color:#174e87
+}
+.order-item-charge .order-confirm-charge-header {
+ border-bottom:1px solid #ddd;
+ color:#666;
+ border-left:3px solid #174e87;
+ font-weight:bold
+}
+.order-sj-popup {
+ display:none;
+ position:absolute;
+ top:35px;
+ left:25px;
+ background-color:#fff;
+ border:1px solid #266699;
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ -ms-border-radius:2px;
+ border-radius:2px;
+ padding:5px 8px;
+ background:#fff;
+ -webkit-box-shadow:0 2px 1px rgba(0,0,0,.09);
+ -moz-box-shadow:0 2px 1px rgba(0,0,0,.09);
+ -ms-box-shadow:0 2px 1px rgba(0,0,0,.09);
+ box-shadow:0 2px 1px rgba(0,0,0,.09);
+ color:#888;
+ overflow:visible;
+ z-index:99998
+}
+.order-sj-popup .arrow {
+ top:-6px;
+ left:35px;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/order_icon.png) no-repeat -15px -54px;
+ width:11px;
+ height:6px;
+ display:block;
+ position:absolute;
+ z-index:99999
+}
+.order-sj-popup p {
+ line-height:18px
+}
+.order-sj-popup p b {
+ color:#555
+}
+.help-main-wrap {
+ font-size:15px;
+ margin:20px auto
+}
+.left-nav {
+ float:left;
+ min-height:1px;
+ width:230px
+}
+.left-nav ul {
+ padding:0;
+ margin:0 0 10px 0;
+ border-bottom:1px solid #d8d8d8;
+ border-top:1px solid #d8d8d8
+}
+.left-nav li.now {
+ border-top:1px solid #d8d8d8;
+ border-bottom:1px solid #d8d8d8
+}
+.left-nav li a {
+ height:45px;
+ line-height:45px;
+ padding:1px 0 1px 40px;
+ display:block;
+ background-color:#f6f6f6;
+ color:#888;
+ text-decoration:none;
+ border-left:1px solid #d8d8d8;
+ border-right:1px solid #d8d8d8
+}
+.left-nav a:hover {
+ color:#0e4e86
+}
+.left-nav .now a {
+ color:#0e4e86;
+ font-weight:700;
+ padding-left:36px;
+ background-color:#FFF;
+ border-right:1px solid #fff;
+ border-left:5px solid #0e4e86
+}
+.left-nav li.top {
+ border-top:0
+}
+.left-nav li.bottom {
+ border-bottom:0
+}
+.right-cont {
+ min-height:700px;
+ width:769px;
+ border:1px solid #d8d8d8;
+ margin-left:229px;
+ margin-bottom:20px
+}
+.right-cont .title {
+ font-family:"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+ font-size:30px;
+ font-weight:normal;
+ color:#0e4e86;
+ margin-bottom:30px
+}
+.contInfo {
+ display:none;
+ font-family:Tahoma,Arial,"simsun",sans-serif;
+ padding:30px 40px
+}
+.contInfo p,
+.contInfo h3 {
+ margin-bottom:12px;
+ line-height:24px
+}
+.contInfo li {
+ padding:.3em 0
+}
+.contInfo .lift .liftIndent {
+ letter-spacing:2em
+}
+.contInfo .lift .liftIndent_1 {
+ letter-spacing:1.6em
+}
+#black {
+ width:100%;
+ height:200px;
+ padding:20px 0;
+ background-color:#333;
+ padding:30px 0 20px 0;
+ clear:both
+}
+#blackin {
+ margin:0 auto;
+ width:1000px;
+ height:100%
+}
+#blackLeft {
+ color:#fff;
+ float:left;
+ width:40%
+}
+#blackLeft i {
+ color:#05bde3;
+ font-size:22px;
+ width:20px
+}
+#blackRight {
+ color:#fff;
+ float:left;
+ width:60%;
+ margin-top:15px
+}
+#contactus {
+ font-weight:bold;
+ line-height:40px;
+ font-size:20px;
+ margin-bottom:10px
+}
+.usmsg {
+ color:#f3f3f3;
+ font-size:16px;
+ line-height:38px;
+ display:block;
+ height:40px
+}
+.usmsg li {
+ float:left;
+ margin-right:20px
+}
+#blackRight input {
+ font-family:"Microsoft YaHei";
+ border:1px solid #ccc;
+ border-left:none;
+ border-right:0;
+ border-top:0;
+ font-size:16px;
+ color:#cecece;
+ background-color:#333;
+ padding:0 5px 5px 5px;
+ line-height:26px
+}
+#inputtopleft {
+ float:left;
+ margin-right:50px;
+ margin-bottom:30px
+}
+#inputtopleft input {
+ width:260px
+}
+#inputtopright input {
+ width:260px
+}
+#inputbottom {
+ width:580px
+}
+#inputbottom input {
+ width:100%
+}
+#sendmsg {
+ background-color:#0189df;
+ border:1px solid #000;
+ border-radius:30px;
+ color:#fff;
+ cursor:pointer;
+ float:right;
+ font-size:18px;
+ height:40px;
+ line-height:40px;
+ margin-top:30px;
+ text-align:center;
+ width:110px
+}
+#sendmsg:hover {
+ background-color:#0b61e3
+}
+.star-icon {
+ background-image:url(http://www.carrierglobe.com/truck-saas/../common/img/star-icon.png);
+ background-repeat:no-repeat
+}
+.map-table td {
+ text-align:left;
+ line-height:18px;
+ border-bottom:0;
+ font-size:12px;
+ padding:0 10px 0 0
+}
+.BMap_shadow img {
+ max-width:initial
+}
+.file-upload {
+ padding:4px 10px;
+ height:20px;
+ line-height:20px;
+ position:relative;
+ cursor:pointer;
+ color:#888;
+ background:#fafafa;
+ border:1px solid #DDD;
+ border-radius:4px;
+ overflow:hidden;
+ display:inline-block;
+ margin-top:6px
+}
+.file-upload input {
+ position:absolute;
+ font-size:100px;
+ right:0;
+ top:0;
+ opacity:0;
+ filter:alpha(opacity=0);
+ cursor:pointer
+}
+.file-upload:hover {
+ color:#444;
+ background:#eee;
+ border-color:#ccc;
+ text-decoration:none
+}
+#shell-search {
+ float:left;
+ width:75%;
+ margin:14px 0 0 7%
+}
+#shell-search .input-wrap {
+ width:auto
+}
+div.input-wrap div.input-radio {
+ float:left;
+ padding-right:5px
+}
+#shell-inquiry-frame .form-wrap .input-wrap {
+ margin-bottom:0
+}
+#shell-inquiry-frame .input-wrap .input-content {
+ font-size:13px;
+ margin-left:-22px
+}
+#shell-inquiry-frame #person_info {
+ border-top:1px solid #428bca;
+ margin-top:2px;
+ padding-top:8px
+}
+#shell-inquiry-frame .transport_detail>div {
+ margin-top:8px
+}
+#shell-search .input-wrap input {
+ line-height:22px;
+ border-radius:2px;
+ border-top-color:#fff;
+ border-bottom-color:#fff;
+ border-right:0;
+ height:26px
+}
+#shell-search .input-wrap .input-icon {
+ font-size:18px;
+ color:#c2c2c2;
+ margin:6px 5px 6px 10px;
+ position:absolute
+}
+#shell-search .input-wrap label {
+ width:63px;
+ text-align:right;
+ padding-right:10px;
+ display:block;
+ float:left;
+ padding-top:2px;
+ line-height:25px;
+ height:26px;
+ font-size:13px
+}
+#shell-search-inner {
+ border:2px solid #0361c5;
+ float:left
+}
+.shell-inquiry {
+ float:left;
+ margin:0 0 1px 3px
+}
+#btn-search-inquiry {
+ margin-left:4px;
+ color:#0361c5;
+ background:#fff;
+ height:28px;
+ line-height:30px;
+ padding:1px 10px;
+ border:1px solid #0361c5;
+ border-radius:0
+}
+.top-floatLeft {
+ float:left
+}
+#search-pol,
+#search-pod {
+ width:90px
+}
+#shell-inquiry-frame #shell-inquiry-frame-check_submit {
+ float:left;
+ width:20px;
+ line-height:28px;
+ height:15px;
+ margin-left:80px
+}
+#btn-search-port {
+ display:inline-block;
+ color:#fff;
+ background-color:#0361c5;
+ padding:0 10px;
+ line-height:27px;
+ font-size:13px;
+ border:1px solid #0361c5;
+ border-radius:0;
+ margin-top:-1px;
+ margin-right:-1px
+}
+#shell-inquiry-frame .detail-1>div {
+ float:left;
+ width:48%
+}
+#shell-inquiry-frame .detail-second {
+ margin-left:-8px
+}
+#shell-inquiry-frame .detail-1 input {
+ width:39%;
+ margin-left:-7px;
+ height:29px
+}
+.frame {
+ width:547px
+}
+#shell-inquiry-frame #cargo_info input {
+ width:69px;
+ margin-left:7px;
+ margin-right:23px;
+ float:left
+}
+#shell-inquiry-frame #cargo_info label {
+ width:99px
+}
+#shell-inquiry-frame #cargo_info .input-wrap {
+ float:left;
+ width:auto
+}
+#shell-inquiry-frame #cargo_info .msg-tip {
+ margin-left:10px
+}
+#shell-inquiry-frame #cargo_info .input-wrap:first-child .msg-tip {
+ margin-left:155px
+}
+#shell-inquiry-frame .form-wrap {
+ width:100%;
+ padding-top:9px;
+ float:left
+}
+#shell-inquiry-frame #remark_place {
+ margin-top:15px
+}
+#shell-inquiry-frame .checkbox {
+ float:left;
+ margin:3% 0 0 16%
+}
+#shell-inquiry-frame #dangerous-1 {
+ margin-top:18px
+}
+#shell-inquiry-frame #dangerous-2 {
+ margin-bottom:9px
+}
+#shell-inquiry-frame #link {
+ font-size:13px;
+ height:16px;
+ margin-left:-24px;
+ color:#428bca
+}
+#shell-inquiry-frame .invisible {
+ display:none
+}
+#shell-header #check_submit {
+ float:left;
+ width:20px;
+ line-height:28px;
+ height:15px;
+ margin-left:80px
+}
+#shell-inquiry-frame .isDanger {
+ float:left;
+ line-height:21px;
+ FONT-SIZE:13PX;
+ margin-right:47px;
+ width:113px
+}
+#shell-inquiry-frame input,
+#shell-inquiry-frame select {
+ padding-left:10px;
+ margin-left:0;
+ width:126px
+}
+#shell-inquiry-frame .input-wrap .input-date-time {
+ width:39%
+}
+#ch_name .msg-tip {
+ font-size:13px;
+ padding:4px 6px;
+ margin-left:242px;
+ margin-top:-14px
+}
+#en_name .msg-tip {
+ font-size:13px;
+ padding:4px 6px;
+ margin-left:242px;
+ margin-top:-14px
+}
+#shell-inquiry-frame #hs_code .msg-tip {
+ font-size:13px;
+ padding:4px 6px;
+ margin-left:242px;
+ margin-top:-14px
+}
+#shell-inquiry-frame .detail .input-wrap label {
+ width:30%
+}
+#shell-inquiry-frame .detail .input-wrap input {
+ width:50%
+}
+#shell-inquiry-frame .input-wrap label {
+ width:96px;
+ text-align:right;
+ padding-right:10px;
+ padding-top:4px;
+ display:block;
+ float:left;
+ line-height:14px;
+ height:29px;
+ font-size:13px
+}
+#shell-inquiry-frame .input-wrap .input-content {
+ font-size:13px
+}
+#shell-inquiry-frame #number {
+ float:left;
+ width:93%;
+ margin-left:69px;
+ padding-top:9px
+}
+#shell-inquiry-frame #number>div {
+ float:left;
+ width:31.3%
+}
+#shell-inquiry-frame .title {
+ text-align:left;
+ margin-left:10px;
+ font-weight:bold
+}
+#shell-inquiry-frame .fa-remove:before,
+#shell-inquiry-frame .fa-close:before,
+#shell-inquiry-frame .fa-times:before {
+ content:"\f00d";
+ color:white
+}
+#shell-inquiry-frame .consoleme {
+ margin-left:330px;
+ color:white;
+ margin-top:-81px;
+ text-shadow:3px 2px 7px #0c4f6d;
+ font-size:22px
+}
+#shell-inquiry-frame #consoleme-2 {
+ color:#fc0
+}
+#shell-header .input-wrap label {
+ width:auto;
+ text-align:right;
+ padding-right:10px;
+ padding-left:10px;
+ display:block;
+ float:left;
+ padding-top:2px;
+ line-height:25px;
+ height:26px;
+ font-size:13px;
+ margin-top:0
+}
+#shell-inquiry-frame #shell-inquiry-frame-remark {
+ float:left;
+ min-width:139%;
+ margin-left:44%;
+ min-height:52px;
+ margin-top:-24px;
+ padding-left:10px
+}
+#shell-inquiry-frame #number .input-wrap label {
+ width:0;
+ text-align:right;
+ display:block;
+ float:left;
+ line-height:20px;
+ height:26px;
+ font-size:13px
+}
+#shell-inquiry-frame .input-qty {
+ width:28px;
+ padding-left:0
+}
+#shell-inquiry-frame .left {
+ width:100%;
+ text-align:center
+}
+#index-mid,
+#index-right {
+ float:left;
+ min-height:200px;
+ text-align:left
+}
+#index-left {
+ width:190px;
+ position:absolute;
+ margin-top:64px;
+ z-index:9000
+}
+.left-h1 {
+ background:#0361c5;
+ color:#fff;
+ padding:0 5px 0 20px;
+ line-height:30px;
+ font-size:14px;
+ font-weight:700;
+ cursor:pointer
+}
+#prod-nav {
+ background:#fff;
+ height:360px;
+ border:1px solid #0361c5;
+ overflow:auto;
+ width:170px;
+ padding-left:18px;
+ z-index:10002
+}
+#prod-nav li a {
+ font-size:13px;
+ color:#666;
+ display:block;
+ padding:0 4px;
+ height:24px;
+ line-height:24px;
+ overflow:hidden;
+ text-align:center;
+ border:1px solid #fff;
+ border-radius:3px;
+ -moz-border-radius:3px;
+ -webkit-border-radius:3px
+}
+#prod-nav li.left-title {
+ padding:12px 5px 10px 0;
+ font-size:14px;
+ font-weight:700
+}
+#prod-nav li.left-title i {
+ margin-right:7px
+}
+#prod-nav .left-products {
+ padding:4px 5px 4px 0;
+ float:left
+}
+#prod-nav li a:hover {
+ color:#008ce4
+}
+#shell-top-inner li,
+#shell-top-inner ul {
+ z-index:20001
+}
+.main-popup-error {
+ text-align:center
+}
+.popup-error,
+.popup-warn {
+ padding:10px;
+ margin:5px 0;
+ background-color:#fceeee;
+ font-size:13px;
+ display:none;
+ margin-right:10px;
+ display:inline-block
+}
+.popup-warn {
+ background-color:#e9f2f9
+}
+.fa-times-circle {
+ color:red
+}
+.fa-exclamation-circle {
+ color:#598df3
+}
+.popup .error_frame {
+ border:1px solid red!important
+}
+.popup .warn_frame {
+ border:1px solid #08c
+}
+.header-padding {
+ padding:10px 5px
+}
+.latest-release-icon {
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/index/new30s.gif) no-repeat
+}
+.haitie-label {
+ font-size:12px;
+ color:#2a8c01;
+ border:1px solid #2a8c01;
+ border-radius:2px;
+ padding:0 4px;
+ height:18px;
+ line-height:18px;
+ text-align:center;
+ margin-left:10px;
+ display:inline-block
+}
+.shell-top-right .fa-shopping-cart {
+ font-size:15px;
+ margin-right:5px;
+ background-color:#f9f9f9
+}
+.shell-top-right .cart-icon-count {
+ border-radius:25px;
+ background-color:#0b75de;
+ color:#fff;
+ margin-left:5px;
+ padding:0 4px
+}
+.shell-header-user a {
+ color:#fff
+}
+.shell-header-user a:hover {
+ text-decoration:underline
+}
+.logo-img {
+ margin-top:8px
+}
+.ui-widget-header {
+ background-color:#e55a5f!important
+}
+.ui-widget-header .ui-icon {
+ background-image:url('http://www.carrierglobe.com/truck-saas/../common/img/jq-ui/ui-icons_white_256x240.png')!important
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+ background:none!important;
+ border:1px solid #e55a5f!important;
+ background-color:#e55a5f!important;
+ color:#fff!important
+}
+#to-top .app_icon_link {
+ opacity:1;
+ position:relative;
+ z-index:99
+}
+#to-top .app_icon {
+ background:url('http://www.carrierglobe.com/truck-saas/img/app_href.png') no-repeat center center;
+ height:50px;
+ width:50px;
+ display:block;
+ background-position:-58px 0
+}
+#to-top .app_icon:hover {
+ background-position:0 0
+}
+#to-top .app_code {
+ background:url('http://www.carrierglobe.com/truck-saas/img/erweima.png') no-repeat center center;
+ width:136px;
+ height:150px;
+ position:absolute;
+ top:60px;
+ right:40px;
+ z-index:1;
+ display:none;
+ background-size:contain
+}
+.shell-phone-logo {
+ float:right;
+ margin:13px 10px 0 0;
+ width:130px
+}
+.phone-img {
+ width:175px
+}
+#shell-nav-wrap .tracking_item {
+ text-align:center;
+ float:left
+}
+#shell-nav-wrap .tracking_item .tracking-input label {
+ display:inline-block;
+ border:1px solid #dedede;
+ border-right:0;
+ border-radius:4px 0 0 4px;
+ margin:0;
+ color:#000
+}
+#shell-nav-wrap .tracking-input input {
+ border-radius:0 4px 4px 0;
+ height:28px;
+ line-height:28px;
+ border:1px solid #dedede;
+ width:250px;
+ float:left;
+ background:#f1f1f1
+}
+#shell-nav-wrap .tracking-btn {
+ background-color:#f1f1f1;
+ color:#e55a5f;
+ font-weight:600;
+ border:0;
+ height:28px;
+ line-height:28px;
+ position:absolute;
+ top:19px;
+ padding:0 12px;
+ margin-left:-42px;
+ margin-top:1px;
+ font-size:18px
+}
+#shell-nav-wrap .tracking-input .input-content {
+ margin-left:0;
+ padding-right:0
+}
+.logo-head {
+ margin-top:5px;
+ display:block;
+ background:url('http://www.carrierglobe.com/truck-saas/img/logo_head.png') no-repeat;
+ height:55px;
+ background-position:0 0
+}
+.input-filter-drop div:hover {
+ background:#eee;
+ cursor:pointer
+}
+.input-item-selected {
+ background:#eee
+}
+#shell-header-language {
+ display:none;
+ float:right;
+ margin:16px 10px 0 0;
+ line-height:30px;
+ background:#fd9b02;
+ padding:0 10px
+}
+#shell-header-language a {
+ color:#fff
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+ display:none
+}
+@font-face {
+ font-family:"iconfont";
+ src:url('../../common/fonts/iconclock/iconfont.eot?t=1464232580');
+ src:url('../../common/fonts/iconclock/iconfont.eot?t=1464232580#iefix') format('embedded-opentype'),
+ url('../../common/fonts/iconclock/iconfont.woff?t=1464232580') format('woff'),
+ url('../../common/fonts/iconclock/iconfont.ttf?t=1464232580') format('truetype'),
+ url('../../common/fonts/iconclock/iconfont.svg?t=1464232580#iconfont') format('svg')
+}
+.icon-font,
+.ali-icon-photo {
+ font-family:"iconfont"!important;
+ font-size:16px;
+ font-style:normal;
+ -webkit-font-smoothing:antialiased;
+ -webkit-text-stroke-width:.2px;
+ -moz-osx-font-smoothing:grayscale;
+ margin:0 3px
+}
+.icon-font:before {
+ content:"\e600"
+}
+.icon-export:before {
+ content:"\e60a"
+}
+.ali-icon-photo:before {
+ content:"\e60d"
+}
+.ali-evaluation:before {
+ content:"\e60e"
+}
+.search-form {
+ border:1px solid #c1c1c1;
+ padding:10px 0 0 10px;
+ margin-bottom:10px!important;
+ background:#fff!important;
+ border-radius:5px;
+ overflow:auto
+}
+.search-form .btn-form {
+ float:right;
+ margin:0 15px 10px 0
+}
+.search-form .input-wrap {
+ width:auto;
+ float:left;
+ position:relative
+}
+.search-form .input-label {
+ width:85px!important
+}
+.search-form .input-wrap select,
+.search-form .input-wrap input {
+ width:162px;
+ box-sizing:border-box
+}
+.search-form .input-wrap.input_date_input input {
+ width:75px!important;
+ padding:0 2px 0 5px!important;
+ float:left
+}
+.search-form .input-wrap .input-content {
+ float:left
+}
+#personal-info-right .admin-table {
+ background:#fff
+}
+.admin-table table tr:nth-child(even) {
+ background:#fff
+}
+.admin-table table tr:nth-child(odd) {
+ background:#fff
+}
+.admin-table table tr:hover {
+ background:#efefef
+}
+#personal-info-right .top-btn-form {
+ float:right;
+ margin:0 10px 10px 0
+}
+#paging-size-select {
+ width:55px!important
+}
+#shell-footer #shell-footer-copyright {
+ float:left;
+ text-align:center;
+ width:100%;
+ clear:both;
+ padding:10px 0;
+ background:#eee
+}
+#shell-footer #shell-footer-copyright .shell-footer-item {
+ text-align:center;
+ color:#999;
+ line-height:22px
+}
+#shell-footer #shell-footer-copyright .shell-footer-item a {
+ color:#ccc;
+ display:inline-block
+}
+.reset-btn {
+ background:rgba(0,0,0,0) url(http://www.carrierglobe.com/truck-saas/../common/img/hand_over_bg.png) repeat-x scroll 0 0;
+ border:1px solid #ccc;
+ color:#323232
+}
+.table-toolbar .operation-btn {
+ float:left;
+ margin-left:8px;
+ background-color:#fff;
+ color:#e55a5f
+}
+.table-toolbar .operation-btn.pull-right {
+ margin-right:10px;
+ float:right
+}
+.list-blank {
+ border-left:1px solid #c1c1c1;
+ border-right:1px solid #c1c1c1
+}
+.notation {
+ float:left;
+ color:#545454;
+ font-weight:normal;
+ border:1px solid #efd97c;
+ padding:7px 10px;
+ background-color:#fffeec;
+ font-size:13px;
+ margin-left:10px
+}
+.notation span {
+ color:#e55a5e;
+ font-weight:bold
+}
+.mask {
+ width:85px;
+ height:84px;
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ background:url("http://www.carrierglobe.com/truck-saas/img/loading_bg.png")
+}
+.spin {
+ width:85px;
+ height:84px;
+ position:absolute;
+ top:0;
+ left:0;
+ background:url("http://www.carrierglobe.com/truck-saas/img/loading_rotate.png");
+ -webkit-animation:fa-spin 1s infinite steps(8);
+ animation:fa-spin 1s infinite steps(8)
+}
+@-webkit-keyframes fa-spin {
+ 0% {
+  -webkit-transform:rotate(0);
+  transform:rotate(0)
+ }
+ 100% {
+  -webkit-transform:rotate(-359deg);
+  transform:rotate(-359deg)
+ }
+}
+@keyframes fa-spin {
+ 0% {
+  -webkit-transform:rotate(0);
+  transform:rotate(0)
+ }
+ 100% {
+  -webkit-transform:rotate(-359deg);
+  transform:rotate(-359deg)
+ }
+}
+.status_green {
+ color:green;
+ font-weight:bold
+}
+.attachment-img {
+ position:relative;
+ width:100%;
+ height:100%;
+ overflow:hidden
+}
+.attachment-img-header {
+ width:800px;
+ height:22px;
+ margin:-10px 0 0 -10px;
+ cursor:pointer
+}
+.bd-img {
+ position:absolute;
+ width:100%;
+ height:100%
+}
+.bd-img li {
+ float:left;
+ height:100%
+}
+.img-show div {
+ position:relative;
+ overflow:hidden;
+ height:100%
+}
+.corner {
+ position:absolute;
+ top:50%;
+ transform:translateY(-50%);
+ width:22px;
+ height:40px;
+ background:#fff;
+ cursor:pointer;
+ opacity:.3;
+ filter:alpha(opacity = 30);
+ text-align:center
+}
+.corner i {
+ font-size:40px
+}
+.bottom-corner {
+ position:absolute;
+ left:50%;
+ bottom:10px;
+ transform:translateX(-50%);
+ width:50%;
+ height:10px
+}
+.right-corner {
+ right:0
+}
+.left-corner {
+ left:0
+}
+.bd-bottom-corner {
+ float:left;
+ height:10px;
+ background:#333;
+ border-right:1px solid #c1c1c1;
+ box-sizing:border-box
+}
+.corner-current {
+ background:#e55a5f
+}
+.triangle {
+ position:absolute;
+ bottom:-6px;
+ left:50%;
+ transform:translateX(-50%);
+ height:0;
+ width:0;
+ border-left:10px solid transparent;
+ border-right:10px solid transparent;
+ border-top:10px solid #eee
+}
+.img-close {
+ position:absolute;
+ top:-7px;
+ right:-7px;
+ width:20px;
+ height:20px;
+ cursor:pointer;
+ background:url("http://www.carrierglobe.com/truck-saas/../common/img/icon_close.png")
+}
+.bd-attachment {
+ position:absolute;
+ width:200px;
+ height:200px;
+ padding:10px 10px 30px;
+ background:#eee;
+ border-radius:5px;
+ z-index:100;
+ -webkit-box-shadow:0 0 10px rgba(0,0,0,.5);
+ -moz-box-shadow:0 0 10px rgba(0,0,0,.5);
+ box-shadow:0 0 10px rgba(0,0,0,.5)
+}
+.bd-attachment.active {
+ position:fixed;
+ width:90%;
+ left:5%;
+ top:5%;
+ height:90%
+}
+.bd-attachment.active li {
+ text-align:center
+}
+.admin-table table td.edit {
+ padding:2px 2px;
+ box-sizing:border-box;
+ border-color:#b3d0e5
+}
+.admin-table table td.edit .img {
+ display:inline-block;
+ background:url('http://www.carrierglobe.com/truck-saas/img/edit.png');
+ width:13px;
+ height:14px;
+ position:absolute;
+ right:3px;
+ top:4px
+}
+.admin-table table td.edit+td {
+ border-left-color:#b3d0e5
+}
+.admin-table table td.edit .hide {
+ display:none!important
+}
+.admin-table table td.edit span.content {
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ width:100%;
+ display:block;
+ padding:3px 7px;
+ box-sizing:border-box;
+ position:relative;
+ height:22px;
+ padding-right:15px
+}
+.admin-table table td.subtotal {
+ min-width:80px
+}
+.admin-table table td.edit span.input input {
+ padding:0 2px;
+ line-height:24px;
+ height:24px
+}
+.admin-table table td span input {
+ box-sizing:border-box;
+ text-align:center;
+ padding:0
+}
+.admin-table table td span input:focus {
+ outline:-webkit-focus-ring-color auto 5px
+}
+#advancedQueryBtn.btn {
+ border-radius:50%;
+ border:1px solid #a43a3e;
+ width:20px;
+ height:20px;
+ text-align:center;
+ line-height:20px;
+ font-size:15px;
+ color:#FFF;
+ background:#e55a5f;
+ padding:0
+}
+#advancedQueryBtn.btn.active {
+ position:absolute;
+ top:10px;
+ right:10px
+}
+.admin-table a {
+ color:#168de7;
+ text-decoration:none;
+ margin:0 2px
+}
+#advancedQueryBtnShow {
+ line-height:25px;
+ color:blue;
+ margin-left:10px
+}
+.btn-group {
+ position:relative;
+ display:inline-block;
+ vertical-align:middle
+}
+.btn-group .btn {
+ background:#eee;
+ color:#333;
+ border:1px solid #ddd
+}
+.btn-group .btn.active {
+ background:#e55a5f;
+ color:#fff;
+ border:1px solid #a43a3e
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+ border-top-right-radius:0;
+ border-bottom-right-radius:0
+}
+.btn-group>.btn:last-child:not(:first-child),
+.btn-group>.dropdown-toggle:not(:first-child) {
+ border-top-left-radius:0;
+ border-bottom-left-radius:0
+}
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+ border-radius:0
+}
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
+ margin-left:-1px
+}
+.dateComponents {
+ float:left;
+ margin-left:40px;
+ margin-bottom:10px
+}
+.popup-cover {
+ position:absolute;
+ text-align:center;
+ top:0;
+ background:url(http://www.carrierglobe.com/truck-saas/../common/img/shadow.png) repeat;
+ opacity:.5
+}
+.cover-icon {
+ display:inline-block;
+ width:34px;
+ height:34px;
+ top:50%;
+ position:relative;
+ background:url(http://www.carrierglobe.com/truck-saas/../truck-saas/img/loading.gif) no-repeat
+}
+.auth-wrap {
+ float:left;
+ position:relative;
+ margin-left:6px;
+ height:30px
+}
+.shell-header-user .auth-wrap {
+ display:none
+}
+.auth-status {
+ display:inline-block;
+ width:30px;
+ height:30px
+}
+.auth-status-no {
+ background:url(http://www.carrierglobe.com/truck-saas/../truck-saas/img/auth-status.png) 0 0
+}
+.auth-status-ing {
+ background:url(http://www.carrierglobe.com/truck-saas/../truck-saas/img/auth-status.png) -30px 0
+}
+.auth-status-done {
+ width:27px;
+ background:url(http://www.carrierglobe.com/truck-saas/../truck-saas/img/auth-status.png) -62px 6px
+}
+#auth-tooltip {
+ position:absolute;
+ box-sizing:content-box;
+ width:60px;
+ left:-54px;
+ font-size:13px;
+ top:30px;
+ cursor:pointer;
+ background-color:#fff;
+ border:#a6a6a6 1px solid;
+ padding:5px 0 3px 23px;
+ border-top:0;
+ z-index:550
+}
+#auth-tooltip:hover {
+ background-color:#ececec
+}
+.auth-hide {
+ display:none
+}
+.tangram-suggestion-main table td {
+ text-align:left
+}
+.tangram-suggestion-main {
+ z-index:20000
+}
+div.aui-list {
+ display:none;
+ position:absolute;
+ right:1px;
+ background-color:#fff;
+ padding:5px 10px;
+ border:1px solid #c1c1c1;
+ border-radius:2px;
+ z-index:1
+}
+.admin-table-list .admin-table table tr td.brief {
+ padding:0;
+ border-left:0;
+ overflow:initial;
+ cursor:pointer
+}
+.admin-table-list .admin-table .operation-bar-congeal tr td.brief:first-child {
+ border-left:0
+}
+.admin-table table th.brief {
+ width:30px;
+ padding:0
+}
+div.action-dropdown {
+ display:none
+}
+div.action-dropdown.selected,
+div.action-dropdown.current {
+ display:block
+}
+div.action-dropdown.current div.aui-list {
+ display:block
+}
+div.action-dropdown:hover,
+div.action-dropdown.current {
+ background-color:#e55a5f;
+ color:#fff
+}
+div.aui-list a {
+ width:100%;
+ display:inline-block;
+ white-space:nowrap;
+ padding:2px 15px 2px;
+ text-align:left
+}
+div.aui-list {
+ white-space:normal
+}
+#personal-info-right div.admin-table-list * {
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ -o-box-sizing:border-box;
+ -ms-box-sizing:border-box;
+ box-sizing:border-box
+}
+div.popup a.btn.onLoading {
+ display:inline-block;
+ background-color:#c0c0c0;
+ color:#000;
+ cursor:default;
+ background-image:url(../img/loading.gif);
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:20px;
+ min-width:30px;
+ border:0
+}
+div.aui-list {
+ display:none;
+ position:absolute;
+ right:1px;
+ background-color:#fff;
+ padding:5px 10px;
+ border:1px solid #c1c1c1;
+ border-radius:2px;
+ z-index:1
+}
+.admin-table-list .admin-table table tr td.brief {
+ padding:0;
+ border-left:0;
+ overflow:initial;
+ cursor:pointer
+}
+.admin-table-list .admin-table .operation-bar-congeal tr td.brief:first-child {
+ border-left:0
+}
+div.action-dropdown {
+ display:none
+}
+div.action-dropdown.selected,
+div.action-dropdown.current {
+ display:block
+}
+div.action-dropdown.current div.aui-list {
+ display:block
+}
+div.action-dropdown:hover,
+div.action-dropdown.current {
+ background-color:#e55a5f;
+ color:#fff
+}
+div.aui-list a {
+ width:100%;
+ display:inline-block;
+ white-space:nowrap;
+ padding:2px 15px 2px;
+ text-align:left
+}
+div.aui-list {
+ white-space:normal
+}
+#personal-info-right div.admin-table-list * {
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ -o-box-sizing:border-box;
+ -ms-box-sizing:border-box;
+ box-sizing:border-box
+}
+div.popup a.btn.onLoading {
+ display:inline-block;
+ background-color:#c0c0c0;
+ color:#000;
+ cursor:default;
+ background-image:url(../img/loading.gif);
+ background-repeat:no-repeat;
+ background-position:center;
+ background-size:20px;
+ min-width:30px;
+ border:0
+}
+div.ui-datepicker {
+ z-index:89!important
+}
+.admin-table table tr.active {
+ background:#f3f3f3
+}
+.admin-table table tr.active .frozen {
+ box-shadow:inset 4px 0 rgba(0,0,0,0.2);
+ background:#f3f3f3
+}
+a.btn.redFontAndWhiteBG {
+ background-color:#fff;
+ color:#e55a5f;
+ border:1px solid #a43a3e
+}
+a.btn.whiteFontAndOrangeBG {
+ background:#fd9b02;
+ color:#fff;
+ border:0;
+ border-radius:4px
+}
+a.alignRight {
+ float:right;
+ margin-right:5px
+}
+div.assist-bar {
+ min-height:150px;
+ min-width:200px;
+ position:absolute;
+ z-index:10004;
+ background-color:#fff;
+ border-radius:0 0 3px 3px;
+ visibility:hidden;
+ border:1px solid #c1c1c1;
+ -webkit-touch-callout:none;
+ -webkit-user-select:none;
+ -khtml-user-select:none;
+ -moz-user-select:none;
+ -ms-user-select:none;
+ user-select:none
+}
+th.auxiliary {
+ cursor:pointer
+}
+ul.assist-list li.item:hover {
+ box-shadow:inset 4px 0 #e55a5f;
+ background:#ffd8da
+}
+ul.assist-list li {
+ padding:8px 10px 8px 15px;
+ cursor:pointer
+}
+ul.assist-list li i {
+ padding-right:10px
+}
+ul.assist-list li.line {
+ padding:0;
+ border-bottom:1px solid #c1c1c1;
+ margin:5px 0
+}
+th.auxiliary i.sort {
+ padding-left:5px
+}
+th.auxiliary div.assist-operation {
+ width:20px;
+ text-align:center;
+ display:none
+}
+th.auxiliary div.assist-operation.active {
+ display:inline-block
+}
+tr.groupBy td.title {
+ text-align:left;
+ font-weight:bold;
+ font-size:13px
+}
+ul.assist-list li.disabled {
+ color:#c1c1c1;
+ cursor:default
+}
+table td.input span {
+ display:none
+}
+table td.input span select {
+ width:100%
+}
+table td.input span.view {
+ padding:0 10px
+}
+table td.input span.active {
+ display:inline-block;
+ width:100%
+}
+.admin-table-list .admin-table table td.input {
+ padding:0
+}
+input.error::-webkit-input-placeholder {
+ color:red!important;
+ font-style:italic
+}
+input.error:-moz-placeholder {
+ color:red!important;
+ font-style:italic
+}
+input.error::-moz-placeholder {
+ color:red!important;
+ font-style:italic
+}
+input.error:-ms-input-placeholder {
+ color:red!important;
+ font-style:italic
+}
+table input.error {
+ border:1px solid red
+}
+.dragging .JColResizer {
+ opacity:.5!important;
+ background:#ccc!important;
+ width:5px!important
+}
+.dragging-before .JColResizer {
+ opacity:.5!important;
+ background:#ccc!important;
+ width:5px!important
+}
+table .frozen {
+ max-width:41px;
+ min-width:41px
+}
+.sticky-thead th {
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis
+}
+.JCLRgrip {
+ margin-left:-5px;
+ position:absolute;
+ z-index:5
+}
+.JCLRgrips {
+ height:0;
+ position:relative
+}
+.JCLRgrip:hover {
+ cursor:e-resize
+}
+.JCLRgrip .JColResizer {
+ position:absolute;
+ background-color:red;
+ filter:alpha(opacity=1);
+ opacity:0;
+ width:10px;
+ height:100%;
+ cursor:e-resize;
+ top:0
+}
+.JColResizer {
+ table-layout:fixed
+}
+.admin-table table tr.active {
+ background:#90caf9!important
+}
+.magnifier {
+ position:fixed;
+ top:22%;
+ display:none;
+ left:62%;
+ height:400px;
+ width:400px;
+ overflow:hidden;
+ z-index:10000
+}
+.magnifier-img {
+ height:1000px;
+ width:1000px
+}
+.pic-div {
+ text-align:center;
+ height:100%;
+ position:relative
+}
+.pic-div a {
+ position:absolute;
+ bottom:5px;
+ width:40px;
+ height:40px;
+ background:#eee;
+ border-radius:10px;
+ color:#838383;
+ font-size:35px;
+ opacity:.7
+}
+.pic-div a i {
+ line-height:40px
+}
+.pic-div .narrow {
+ left:5px
+}
+.pic-div .save {
+ left:32%
+}
+.pic-div .rotate {
+ left:62%
+}
+.pic-div .enlarge {
+ right:5px
+}
+.pic-div .reset {
+ position:absolute;
+ left:47%;
+ bottom:0;
+ width:50px;
+ height:50px;
+ background:#fff;
+ border-radius:20px;
+ font-size:45px;
+ opacity:.3
+}
+.popup ~ .input-drop {
+ z-index:10003!important
+}
+.popup ~ .ui-datepicker {
+ z-index:10003!important
+}
+#tap-container {
+ overflow:hidden
+}
+#switch-container .tap-panel {
+ display:none
+}
+#switch-container .tap-panel.active {
+ display:block
+}
+.switch-tap {
+ border-bottom:1px solid #ddd;
+ margin-bottom:10px
+}
+.float-right {
+ float:right!important
+}
+.switch-tap:after {
+ content:" ";
+ display:table;
+ clear:both
+}
+.switch-tap>li {
+ float:left;
+ margin-bottom:-1px
+}
+.switch-tap>li,
+.switch-tap li a {
+ display:block;
+ position:relative
+}
+.switch-tap li.active {
+ border-bottom:0
+}
+.switch-tap li a {
+ font-size:13px;
+ padding:7px 15px;
+ color:#3b73af
+}
+.switch-tap li.active a {
+ color:#555;
+ background-color:#fff;
+ border:1px solid #ddd;
+ border-bottom-color:transparent;
+ cursor:default;
+ font-weight:600
+}
+.drag-move-head {
+ overflow:hidden
+}
+.drag-move-body {
+ overflow:hidden
+}
+.drag-move {
+ float:left;
+ margin-right:5px
+}
+.drag-move:last-child {
+ margin-right:0
+}
+.drag-move-head li,
+.drag-move li {
+ height:24px;
+ line-height:20px
+}
+.drag-move-head li div,
+.drag-move li div {
+ float:left;
+ text-align:center;
+ border-right:1px solid #ccc;
+ box-sizing:border-box;
+ height:100%;
+ padding:3px;
+ font-size:12px;
+ font-family:'SimSun'
+}
+.drag-move li div:first-child {
+ border-left:1px solid #ccc
+}
+.drag-move-head li div {
+ font-size:13px;
+ font-weight:bold;
+ background-color:#aaa;
+ color:#fff
+}
+.drag-move li div input[type=text] {
+ width:100%;
+ line-height:16px;
+ display:block;
+ padding:0;
+ box-sizing:border-box;
+ text-align:center
+}
+.drag-move-head li {
+ border-bottom:1px solid #ccc;
+ overflow:hidden
+}
+.drag-move li {
+ width:100%;
+ overflow:hidden;
+ text-align:left;
+ border-top:1px solid #ccc
+}
+.drag-move li .drag-handle {
+ cursor:move
+}
+.drag-move li:first-child {
+ border-top:0
+}
+.drag-move li:last-child {
+ border-bottom:1px solid #ccc
+}
+.drag-move li.sortable-ghost {
+ opacity:.4;
+ background-color:#f4e2c9
+}
+.drag-move-body .edit .hide {
+ display:none!important
+}
+.drag-move-body .edit span.input input:focus {
+ outline:-webkit-focus-ring-color auto 5px
+}
+.drag-info {
+ top:0;
+ font-size:14px;
+ color:#e07676;
+ position:absolute;
+ line-height:28px
+}
+.drag-info-tap {
+ font-size:14px;
+ color:#e07676;
+ line-height:28px;
+ float:right
+}
+.width-1 {
+ width:35px
+}
+.width-2 {
+ width:80px
+}
+.width-3 {
+ width:50px
+}
+#latest-announcement {
+ width:745px;
+ border:1px solid #cecece;
+ font-size:15px
+}
+#latest-announcement .announcement-item {
+ margin-bottom:0
+}
+#latest-announcement .announcement-item .fa {
+ float:right
+}
+#latest-announcement .announcement-item:not(:first-child) .announcement-title {
+ border-top:1px solid #cecece
+}
+#latest-announcement .announcement-title {
+ text-align:left;
+ padding:10px 20px
+}
+#latest-announcement .announcement-detail {
+ border-bottom:1px solid #cecece;
+ display:none
+}
+#latest-announcement .publish-person {
+ float:left;
+ padding:10px 0;
+ font-size:12px;
+ color:#999;
+ font-weight:lighter;
+ margin-left:10px
+}
+#latest-announcement .publish-time {
+ float:left;
+ padding:10px 0;
+ font-size:12px;
+ font-weight:lighter;
+ color:#999
+}
+#latest-announcement .announcement-content {
+ padding:0 20px 10px;
+ text-align:left;
+ font-weight:normal;
+ line-height:15px;
+ word-wrap:break-word;
+ word-break:break-all;
+ font-size:13px;
+ margin-top:-10px;
+ color:#555
+}
+.white-btn {
+ background:#fff;
+ color:#e55a5f;
+ border:1px solid #e55a5f
+}
+.jsgrid .btn-group .btn {
+ background-color:#e55a5f!important;
+ color:#fff!important;
+ border-radius:3px!important
+}
+.kkk {
+ font-weight:bold
+}
+#personal-info-left .menu-operation {
+ font-size:12px
+}
+#floating-box .floating-title {
+ background:#e55a5f
+}
+.fa-toggle {
+ border-color:#e55a5f;
+ background-color:#e55a5f
+}
+.toast-title {
+ font-weight:bold
+}
+.toast-message {
+ -ms-word-wrap:break-word;
+ word-wrap:break-word;
+ color:#fff
+}
+.toast-message a,
+.toast-message label {
+ color:#fff
+}
+.toast-message a:hover {
+ color:#ccc;
+ text-decoration:none
+}
+.toast-close-button {
+ position:relative;
+ right:-0.3em;
+ top:-0.3em;
+ float:right;
+ font-size:20px;
+ font-weight:bold;
+ color:#fff;
+ -webkit-text-shadow:0 1px 0 #fff;
+ text-shadow:0 1px 0 #fff;
+ opacity:.8;
+ -ms-filter:alpha(opacity=80);
+ filter:alpha(opacity=80)
+}
+.toast-close-button:hover,
+.toast-close-button:focus {
+ color:#000;
+ text-decoration:none;
+ cursor:pointer;
+ opacity:.4;
+ -ms-filter:alpha(opacity=40);
+ filter:alpha(opacity=40)
+}
+button.toast-close-button {
+ padding:0;
+ cursor:pointer;
+ background:transparent;
+ border:0;
+ -webkit-appearance:none
+}
+.toast-top-center {
+ top:2px;
+ font-size:16px;
+ right:42%;
+ width:auto
+}
+.toast-bottom-center {
+ bottom:0;
+ right:0;
+ width:100%
+}
+.toast-top-full-width {
+ top:0;
+ right:0;
+ width:100%
+}
+.toast-bottom-full-width {
+ bottom:0;
+ right:0;
+ width:100%
+}
+.toast-top-left {
+ top:12px;
+ left:12px
+}
+.toast-top-right {
+ top:12px;
+ right:12px
+}
+.toast-bottom-right {
+ right:12px;
+ bottom:12px
+}
+.toast-bottom-left {
+ bottom:12px;
+ left:12px
+}
+#toast-container {
+ position:fixed;
+ z-index:999999;
+ font-size:15px;
+ text-align:center
+}
+#toast-container * {
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ box-sizing:border-box
+}
+#toast-container>div {
+ margin:0 0 6px;
+ padding:15px;
+ width:300px;
+ -moz-border-radius:3px 3px 3px 3px;
+ -webkit-border-radius:3px 3px 3px 3px;
+ border-radius:3px 3px 3px 3px;
+ background-position:15px center;
+ background-repeat:no-repeat;
+ -moz-box-shadow:0 0 12px #999;
+ -webkit-box-shadow:0 0 12px #999;
+ box-shadow:0 0 12px #999;
+ color:#fff;
+ opacity:.8;
+ -ms-filter:alpha(opacity=80);
+ filter:alpha(opacity=80)
+}
+#toast-container>:hover {
+ -moz-box-shadow:0 0 12px #000;
+ -webkit-box-shadow:0 0 12px #000;
+ box-shadow:0 0 12px #000;
+ opacity:1;
+ -ms-filter:alpha(opacity=100);
+ filter:alpha(opacity=100);
+ cursor:pointer
+}
+#toast-container.toast-top-center>div,
+#toast-container.toast-bottom-center>div {
+ width:300px;
+ margin:auto
+}
+#toast-container.toast-top-full-width>div,
+#toast-container.toast-bottom-full-width>div {
+ width:96%;
+ margin:auto
+}
+.toast {
+ background-color:#030303
+}
+.toast-success {
+ background-color:#abe7ed
+}
+.toast-error {
+ background-color:#fbe1e3
+}
+.toast-info {
+ background-color:#f9e491
+}
+.toast-warning {
+ background-color:#f89406
+}
+@media all and (max-width:240px) {
+ #toast-container>div {
+  padding:8px;
+  width:11em
+ }
+ #toast-container .toast-close-button {
+  right:-0.2em;
+  top:-0.2em
+ }
+}
+@media all and (min-width:241px) and (max-width:480px) {
+ #toast-container>div {
+  padding:8px;
+  width:18em
+ }
+ #toast-container .toast-close-button {
+  right:-0.2em;
+  top:-0.2em
+ }
+}
+@media all and (min-width:481px) and (max-width:768px) {
+ #toast-container>div {
+  padding:15px;
+  width:25em
+ }
+}
+.toast .toast-close-button {
+ display:inline-block;
+ margin-top:0;
+ margin-right:0;
+ text-indent:-100000px;
+ width:11px;
+ height:16px;
+ background-repeat:no-repeat!important;
+ background-image:url('http://www.carrierglobe.com/truck-saas/img/portlet-remove-icon-white.png')!important
+}
+#browser-incompatible {
+ position:absolute;
+ background-size:cover;
+ height:100%;
+ width:100%;
+ top:0
+}
+#browser-incompatible-popup {
+ margin:0 auto;
+ height:150px;
+ width:500px;
+ background-color:#fff;
+ top:35%;
+ position:relative;
+ display:block
+}
+#browser-incompatible-popup .incompatible-content {
+ height:100px;
+ line-height:100px
+}
+.download-btn {
+ background:#fff;
+ color:#e55a5f;
+ border:1px solid #e55a5f;
+ width:120px;
+ margin:0 10px
+}
+.allFeesTotal {
+ color:#000;
+ margin-left:10px;
+ font-weight:normal
+}
+.CONTAINER_NO_ACCEPTED {
+ color:#2bc5d3
+}
+.CONTAINER_ACCEPTED {
+ color:#639de0
+}
+.CONTAINER_DISPATCHED {
+ color:#494f76
+}
+.CONTAINER_PROCESSING {
+ color:#f2c208
+}
+.CONTAINER_COMPLETE {
+ color:#ef7075
+}
+.CONTAINER_CANCELLED {
+ color:#666
+}
+.CONTAINER_TERMINATION {
+ color:#333
+}
+.CONTAINER_WAIT_GRABORDER {
+ color:#ccc
+}
+.CONTAINER_WAIT_DISPATCH {
+ color:#59aea2
+}
+.pic-div canvas {
+ margin:0 auto;
+ position:relative;
+ top:50%;
+ transform:translateY(-50%)
+}
+.toast-success {
+ background-color:#51a351!important
+}
+.toast-error {
+ background-color:#bd362f!important
+}
+.toast-info {
+ background-color:#2f96b4!important
+}
+.toast-warning {
+ background-color:#f89406!important
+}
+.black.add-remark {
+ color:#aaa
+}
+.popover {
+ max-width:276px;
+ padding:1px;
+ text-align:left;
+ text-align:start;
+ font-size:14px;
+ background-color:#fff;
+ border:1px solid #ccc;
+ border:1px solid rgba(0,0,0,.2);
+ border-radius:6px;
+ -webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);
+ box-shadow:0 5px 10px rgba(0,0,0,.2);
+ font-family:tahoma,arial,'Hiragino Sans GB',sans-serif
+}
+.popover {
+ box-shadow:5px 5px rgba(102,102,102,.1);
+ padding:0
+}
+.popover.top>.arrow {
+ left:50%;
+ margin-left:-11px;
+ border-bottom-width:0;
+ border-top-color:#999;
+ border-top-color:rgba(0,0,0,.25);
+ bottom:-11px
+}
+.popover>.arrow {
+ border-width:11px
+}
+.popover>.arrow,
+.popover>.arrow:after {
+ position:absolute;
+ display:block;
+ width:0;
+ height:0;
+ border-color:transparent;
+ border-style:solid
+}
+.popover.top>.arrow:after {
+ content:" ";
+ bottom:1px;
+ margin-left:-10px;
+ border-bottom-width:0;
+ border-top-color:#fff
+}
+.popover>.arrow:after {
+ border-width:10px;
+ content:""
+}
+.popover .popover-title {
+ margin:0!important
+}
+.popover-title {
+ margin:0;
+ padding:8px 14px;
+ font-size:14px;
+ background-color:#f7f7f7;
+ border-bottom:1px solid #ebebeb;
+ border-radius:5px 5px 0 0
+}
+.popover-content {
+ padding:9px 14px
+}
+.editableform {
+ margin-bottom:0
+}
+.form-inline .control-label,
+.form-inline .form-group {
+ margin-bottom:0;
+ vertical-align:middle
+}
+.form-inline .form-control-static,
+.form-inline .form-group {
+ display:inline-block
+}
+.editable-input {
+ vertical-align:top;
+ display:inline-block;
+ width:auto;
+ white-space:normal;
+ zoom:1
+}
+.form-inline .form-control {
+ display:inline-block;
+ width:auto;
+ vertical-align:middle
+}
+textarea.form-control {
+ height:100px;
+ padding:0 10px;
+ font-size:13px
+}
+.editable-buttons.editable-buttons-bottom {
+ display:block;
+ margin-top:7px;
+ margin-left:0;
+ text-align:right
+}
+.editable-buttons {
+ display:inline-block;
+ vertical-align:top;
+ margin-left:7px;
+ zoom:1
+}
+.btn.blue:not(.btn-outline) {
+ color:#FFF;
+ background-color:#3598dc;
+ border-color:#3598dc
+}
+.btn.default:not(.btn-outline) {
+ color:#666;
+ background-color:#e1e5ec;
+ border-color:#e1e5ec
+}
+.table .btn {
+ margin-top:0;
+ margin-left:0;
+ margin-right:5px
+}
+.charge-form-container .input-wrap {
+ margin-left:26px
+}
+.displayNone {
+ display:none!important
+}
+.red {
+ color:red
+}
+.bdg_yellow {
+ background:yellow
+}
+#search_input {
+ height:20px
+}
+.CONTAINER_WAIT_AUDIT {
+ color:#f4d03f!important
+}
+.CONTAINER_CANCELLED {
+ color:#94a0b2!important
+}
+.CONTAINER_ACCEPTED {
+ color:#29b4b6!important
+}
+.CONTAINER_COMPLETE {
+ color:#f2784b!important
+}
+.CONTAINER_DISPATCHED {
+ color:#2f353b!important
+}
+.CONTAINER_TERMINATION {
+ color:#d91e18!important
+}
+.CONTAINER_NO_ACCEPTED {
+ color:#578ebe!important
+}
+.CONTAINER_WAIT_GRABORDER {
+ color:#bf55ec!important
+}
+.CONTAINER_CONFIRM_ORDER {
+ color:#8e44ad!important
+}
+.CONTAINER_WAIT_DISPATCH {
+ color:#c49f47!important
+}
+span[class^="CONTAINER_"] {
+ font-weight:bold
+}

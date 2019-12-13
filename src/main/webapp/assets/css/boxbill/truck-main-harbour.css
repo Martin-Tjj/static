@@ -1,0 +1,238 @@
+#shell-header .shell-header-logo {
+ width:120px
+}
+#shell-header .shell-header-company {
+ display:none
+}
+.logo-head {
+ background:url('http://www.carrierglobe.com/truck-saas/../truck-saas/img/logo_truckhabour.png') no-repeat;
+ background-size:98%
+}
+#advancedQueryBtnShow {
+ color:#494d76
+}
+#personal-info-left {
+ background-color:#494d76
+}
+.btn-group .btn.active {
+ background:#494d76;
+ color:#fff;
+ border:1px solid #494d76
+}
+#personal-info-left .menu-operation {
+ background:#303350;
+ color:#FFF
+}
+#personal-info-left ul li.active {
+ background:#ef7d17
+}
+.table-toolbar .operation-btn {
+ color:#494d76!important;
+ background-color:#fff!important;
+ border:1px solid #494d76
+}
+#export,
+.download-btn,
+.time,
+#shell-wrap-inner #create-order h3,
+.tab-h .tab-h-tabs .current,
+.tab-v .tab-v-tabs .current,
+.breadcrumb-left .child-node,
+#shell-nav-wrap .tracking-btn {
+ color:#005285!important
+}
+#personal-info-left .menu-operation-open i {
+ background:#27405b;
+ color:#FFF
+}
+#personal-info-left .menu-operation-open .open-menu-info {
+ background:#27405b;
+ border-bottom:0;
+ color:#FFF
+}
+.popup-title {
+ background:#494d76
+}
+.btn.btn-reverse,
+#shell-wrap-inner #cancel_btn,
+#shell-wrap-inner #cancel_btn,
+.popup .btn {
+ color:#005285;
+ border:1px solid #27405b;
+ background:#fff
+}
+.reset-btn.btn,
+.notation .span {
+ border-color:#494d76;
+ color:#005285
+}
+.btn,
+.btn.btn-major,
+.popup .btn.btn-major,
+#shell-wrap-inner #create_btn,
+#posting,
+.btn#confirm-bill,
+.paging .paging-item span:hover,
+.paging .paging-item .paging-current,
+#advancedQueryBtn.btn {
+ border-color:#ef7d17;
+ background-color:#ef7d17;
+ color:#fff
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+ border-color:#27405b!important;
+ background-color:#005285!important
+}
+.ui-widget-header,
+#enquiry-list table th,
+#order-list table th,
+#stat-list table th,
+#fleet-list th,
+.admin-table thead th.frozen,
+.print-group .btn:hover,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.switch label input[type=checkbox]:checked+.lever:after,
+#shell-header .shell-header-user,
+.admin-table table th,
+table th,
+#new-order-list .pq-grid-title-row {
+ background-color:#494d76!important;
+ color:#FFF!important
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+ border:1px solid #005285
+}
+#jsgrid_t .switch label input[type=checkbox]:checked+.lever {
+ background-color:#0361c5
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+ background:none!important;
+ border:1px solid #005285!important;
+ background-color:#005285!important;
+ color:#fff!important
+}
+.logo-head:hover {
+ background-position:0 0
+}
+.fa.btn {
+ border-color:#494d76!important;
+ background-color:#494d76!important
+}
+#shell-wrap-inner .create-form {
+ border-top:3px solid #005285
+}
+.mask,
+.spin {
+ background-size:cover;
+ width:55px;
+ height:54px
+}
+.mask {
+ background-image:url("http://www.carrierglobe.com/truck-saas/img/GR_loading_bg.png")
+}
+.spin {
+ background-image:url("http://www.carrierglobe.com/truck-saas/img/GR_loading_rotate.png")
+}
+.wrap.input-wrap input[type="checkbox"] {
+ margin-right:0
+}
+.quote-tip {
+ background-color:#bbe3ff!important;
+ border:1px solid #83abff!important
+}
+.quote-tip i.icon-font,
+div.admin-table i.icon-font {
+ color:#007cff!important
+}
+span.span-btn {
+ color:#0361c5!important
+}
+div.item div.icon-images {
+ background-image:url(../img/BG_icon_info_portx.png)!important
+}
+.bread-crumbs .current span,
+.bread-crumbs .current a {
+ color:#0361c5!important
+}
+div.createTitle {
+ color:#0361c5!important
+}
+.line-red {
+ background-color:#0361c5!important
+}
+#upload {
+ background-color:#0361c5;
+ border:1px solid #27405b
+}
+.btn_oper #cancel {
+ color:#0361c5;
+ border:1px solid #0361c5
+}
+.btn_oper #create {
+ background-color:#0361c5
+}
+.red-item {
+ background:#0361c5!important
+}
+span.agreement {
+ background-color:#0361c5!important
+}
+span.red {
+ color:#0361c5!important
+}
+.main-detail div.right div.main div.trade-info-item span.left {
+ background-image:url(../img/BG_icon_info_portx.png)!important
+}
+.patch-publish {
+ color:#0361c5!important
+}
+#progress,
+#upload-result {
+ background:#cde5ff!important
+}
+#progress .bar {
+ background:#007cff
+}
+.shell-header-company img,
+.phone-img,
+#to-top a:first-child,
+#to-top a.app_icon_link {
+ display:none
+}
+#shell-header-inner #notify {
+ display:none
+}
+.white-btn {
+ background:#fff;
+ color:#343967;
+ border:1px solid #343967
+}
+.jsgrid .btn-group .btn {
+ background-color:#494d76!important;
+ color:#fff!important;
+ border-radius:3px!important
+}
+#floating-box .floating-title {
+ background:#494d76
+}
+.fa-toggle {
+ border-color:#494d76;
+ background-color:#494d76
+}
